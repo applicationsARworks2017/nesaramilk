@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/center_point"
+                    android:layout_width="12dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:background="@color/light_primary"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/cutomers"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/center_point"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@mipmap/ic_supervisor_account_white_24dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customers"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/productprice"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/light_colorAccent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/center_point">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="@color/colorAccent"
+                            android:background="@drawable/ic_attach_money_white_24dp"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set product price"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorAccent"
+                            />
+                    </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tracksubordinates"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="36dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:background="@color/light_subscriptions">
+
+                <TextView
+                    android:id="@+id/tvShowcaseEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_view_list_black_24dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/subscriptions"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subscriptions"
+                    android:textColor="@color/subscriptions"/>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/center_point1"
+                    android:layout_width="12dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:background="@color/background"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/sendMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/center_point1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/yellow"
+                        android:background="@mipmap/ic_message_black_24dp"
+                        android:layout_marginTop="30dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Send message to users"
+                        android:textColor="@color/yellow" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cuponcode"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_red"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/center_point1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_payment_black_24dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/red"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate cupon code"
+                        android:textColor="@color/red"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+               </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tracksubordinates1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="36dp"
+                android:orientation="vertical"
+                android:background="@color/light_ofcolor">
+
+                <TextView
+                    android:id="@+id/tvShowcaseEvents1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_person_black_24dp"
+                    android:backgroundTint="@color/ofcolor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/ofcolor"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/center_point2"
+                    android:layout_width="12dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:background="@color/light_purple"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/report"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/center_point2"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/purple"
+                        android:background="@mipmap/ic_note_black_24dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate Reports"
+                        android:textColor="@color/purple"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/add_ppartments"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/indigo_new"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/center_point2">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/deep_indigo"
+                        android:background="@mipmap/ic_location_city_black_24dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Apartments"
+                        android:textColor="@color/deep_indigo"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent"
+                android:text="LOGOUT"
+                android:id="@+id/admin_logout"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="demosell.amaresh.android.com.nesara">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.EnterPhone"
+            android:label="Registration" />
+        <activity
+            android:name=".Activity.AdminActivity"
+            android:label="Dash Board">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Activity.AdminDetails"
+            android:label="AdminDetails" />
+        <activity android:name=".Activity.PayMentGateWayPayUbiz" />
+        <activity
+            android:name=".Activity.Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.TransactionHistory"
+            android:parentActivityName=".Activity.Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.AddSubscription"
+            android:label="@string/add_sub"
+            android:parentActivityName=".Activity.Home" />
+        <activity
+            android:name=".Activity.Mywallet"
+            android:label="@string/my_wallet"
+            android:parentActivityName=".Activity.Home" />
+        <activity
+            android:name=".Activity.PaymentActivity"
+            android:label="@string/pay_confirm"
+            android:parentActivityName=".Activity.Home" />
+        <activity
+            android:name=".Activity.Subscription_edit"
+            android:label="@string/edit_sub"
+            android:parentActivityName=".Activity.Home" />
+
+        <receiver android:name=".Util.OtpReader">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.DeliveryDetails"
+            android:label="Delivery Details" />
+        <activity android:name=".Activity.CalenderView" />
+        <activity android:name=".Activity.Resumecalender" />
+        <activity
+            android:name=".Activity.NotificationActivity"
+            android:label="Notifications"
+            android:parentActivityName=".Activity.Home" />
+        <activity
+            android:name=".Activity.AdminUserList"
+            android:label="Users"
+            android:parentActivityName=".Activity.AdminActivity" />
+        <activity
+            android:name=".Activity.UserDetailsPage"
+            android:label="Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.SetProductPrice"
+            android:label="Set Price"
+            android:parentActivityName=".Activity.AdminActivity" />
+        <activity
+            android:name=".Activity.MessageActivity"
+            android:label="Message"
+            android:parentActivityName=".Activity.AdminActivity" />
+        <activity
+            android:name=".Activity.ContactsActivity"
+            android:label="All Users"
+            android:parentActivityName=".Activity.MessageActivity" />
+        <activity
+            android:name=".Activity.CuponCodeActivity"
+            android:label="Generate Discount Cupon"
+            android:parentActivityName=".Activity.AdminActivity" />
+        <activity
+            android:name=".Activity.AddApartments"
+            android:label="Apartments" />
+        <activity
+            android:name=".Activity.Addapartmentdeatils"
+            android:label="Enter Apartment Details"
+            android:parentActivityName=".Activity.AddApartments" />
+        <activity android:name=".Activity.ReportActivity"
+            android:label="Delivery Report"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activity.AdminActivity"></activity>
+    </application>
+
+</manifest>

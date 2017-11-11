@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18a85d</color>
+    <color name="colorPrimaryDark">#298522</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_colorAccent">#f7dcdc</color>
+    <color name="bg_color">#f6f6f6</color>
+    <color name="white_color">#ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#fff60d36</color>
+    <color name="light_red">#FFA7A7</color>
+    <color name="background">#F2F2F2</color>
+    <color name="gray">#5d5d5d</color>
+    <color name="lightgray">#f0f0f0</color>
+    <color name="indigo">#8C9EFF</color>
+    <color name="indigo_new">#8fafff</color>
+    <color name="deep_indigo">#000080</color>
+    <color name="ofpink">#B18A8A</color>
+    <color name="ofcolor">#2B4227</color>
+    <color name="light_ofcolor">#C8EBC2</color>
+    <color name="deepgray">#350F0F</color>
+    <color name="bg_list">#ECEFF1</color>
+    <color name="bg_list1">#638C5B</color>
+    <color name="black">#000000</color>
+    <color name="blue">#8689AA</color>
+    <color name="green">#32D525</color>
+    <color name="debit_transaction">#ffb9b9</color>
+    <color name="credit_transaction">#bdfbaa</color>
+    <color name="light_gray">#e3e2dd</color>
+    <color name="light_primary">#e6fff2</color>
+    <color name="light_subscriptions">#e0ddfd</color>
+    <color name="subscriptions">#897ef8</color>
+    <color name="yellow">#FF8400</color>
+    <color name="purple">#B121AC</color>
+    <color name="light_purple">#EAC8E9</color>
+    <color name="lightyellow">#F9FD7F</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tab_home"
+                    android:icon="@drawable/home"
+                    android:title="Home" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Wallet">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tab_wallet"
+                    android:icon="@drawable/wallet"
+                    android:title="Wallet" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Subscription">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tab_subscribe"
+                    android:icon="@drawable/subscribe"
+                    android:title="Subscription" />
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="About">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/setting"
+                    android:icon="@drawable/setting"
+                    android:title="Settings" />
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="About">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/about"
+                    android:title="About" />
+            </group>
+        </menu>
+
+    </item>
+
+   </menu>

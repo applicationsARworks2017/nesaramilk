@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/thistory_rel"
+        android:layout_marginTop="160dp"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <ListView
+            android:id="@+id/trans_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bg_list"
+            android:dividerHeight="2dp"
+            android:divider="@android:color/transparent">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_color">
+
+        <TextView
+            android:id="@+id/textbalanceHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Total Balance"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textbalanceHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/Rs"
+            android:id="@+id/tv_balance"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tv_refresh"
+            android:layout_marginTop="20dp"
+            android:text="Refresh"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tv_addMoney"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/tv_balance"
+            android:text="Add Money"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

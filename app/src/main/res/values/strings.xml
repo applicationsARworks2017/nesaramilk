@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NesaraMilk</string>
+    <string name="title_activity_home">Home</string>
+    <string name="add_sub">Add Subscription</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="pay_confirm">Confirm Payment</string>
+    <string name="edit_sub">Modify Subscription</string>
+    <string name="my_sub">My Subcription</string>
+    <string name="History">Transaction Histories</string>
+    <string name="could_not_receive_data">Could not receive data</string>
+    <string name="Rs">\u20B9</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

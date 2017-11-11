@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wsha apartment"
+            android:layout_marginTop="5dp"
+            android:id="@+id/apartmentname"
+            android:maxLength="20"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:background="@color/black">
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E20122"
+            android:maxLength="15"
+            android:id="@+id/flatname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:background="@color/black">
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desi Milk"
+            android:maxLength="20"
+            android:id="@+id/productname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:background="@color/black">
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.5L"
+            android:maxLength="15"
+            android:id="@+id/quanity"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

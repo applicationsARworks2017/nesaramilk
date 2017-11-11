@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relcupon"
+    android:layout_height="match_parent"
+    tools:context="demosell.amaresh.android.com.nesara.Activity.CuponCodeActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:padding="10dp"
+                android:background="@color/white_color"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Select Users :"
+                        android:id="@+id/headingUsers"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/selectUser"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/ic_contacts_black_24dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/red"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/headingUsers"
+                        android:layout_margin="10dp"
+                        android:text=""/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/product_group"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orf_radio"
+                    android:checked="true"
+                    android:text="Regular Milk"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/a2_radio"
+                    android:layout_height="wrap_content"
+                    android:text="Desi | A2"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter Discount Price"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:hint="Discount Price"
+                android:id="@+id/et_discountprice"
+                android:gravity="center"
+                android:background="@drawable/customedittext_price"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter Expiry Date"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_expiry"
+                android:hint="Expiry Date"
+                android:focusable="false"
+                android:editable="false"
+                android:gravity="center"
+                android:background="@drawable/customedittext_price"/>
+            <LinearLayout
+                android:id="@+id/lin_cuponcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="50dp"
+                android:visibility="gone"
+                android:background="@color/light_primary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cuponcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="CODE1234"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/share_code"
+                    android:background="@mipmap/ic_share_black_24dp"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/copy_code"
+                    android:background="@mipmap/ic_content_copy_black_24dp"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/refresh"
+                    android:background="@mipmap/ic_loop_black_24dp"
+                    android:backgroundTint="@color/colorPrimary" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="50dp"
+                android:background="@color/colorPrimary"
+                android:text="GENERATE"
+                android:textColor="@color/white_color"
+                android:id="@+id/bt_generate"
+                />
+        </LinearLayout>
+    </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

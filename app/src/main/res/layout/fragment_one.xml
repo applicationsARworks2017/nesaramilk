@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/subscribeframe"
+    android:background="@color/background"
+    tools:context="demosell.amaresh.android.com.nesara.Fragment.OneFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No visitors found"
+        android:id="@+id/no_subscribe" />
+    <SearchView
+        android:id="@+id/visitorsSearch"
+        android:layout_width="wrap_content"
+        android:background="@color/background"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/subscriptions_rel"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="12dp"
+            android:background="@color/bg_list"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="4dp"
+            android:id="@+id/subscriptionList">
+
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

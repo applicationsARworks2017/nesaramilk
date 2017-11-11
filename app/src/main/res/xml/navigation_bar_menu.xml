@@ -1,0 +1,28 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/home"
+        title="Home"
+        activeColor="@color/colorPrimary"
+        />
+    <tab
+        id="@+id/tab_wallet"
+        icon="@drawable/wallet"
+        title="Wallet"
+        activeColor="@color/colorPrimary" />
+    <tab
+        id="@+id/tab_subscribe"
+        icon="@drawable/subscribe"
+        title="Subscription"
+        activeColor="@color/colorPrimary"/>
+    <tab
+        id="@+id/tab_setting"
+        icon="@drawable/setting"
+        title="Profile"
+        activeColor="@color/colorPrimary"/>
+    <tab
+        id="@+id/tab_about"
+        icon="@drawable/about"
+        title="Contacts"
+        activeColor="@color/colorPrimary"/>
+</tabs>

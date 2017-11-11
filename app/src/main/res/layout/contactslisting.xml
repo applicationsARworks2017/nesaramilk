@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/iv_letterView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_letterView"
+        android:id="@+id/Name"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_letterView"
+        android:id="@+id/apt_name"
+        android:layout_below="@id/Name"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"/>
+   <CheckBox
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_marginTop="20dp"
+       android:layout_marginRight="20dp"
+       android:id="@+id/checkUser"/>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_detailsforpayment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/white_color"
+        card_view:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="2dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="60dp"
+        card_view:contentPadding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/walletimg"
+                android:background="@drawable/wallet_icon"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/rupees_in_wallet"
+                android:text="Rs. 0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="AVAILABLE"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="40dp"
+                android:text="Add Amount"
+                android:textSize="15dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Amount"
+                android:layout_marginTop="-5dp"
+                android:text="100"
+                android:inputType="number"
+                android:focusableInTouchMode="true"
+                android:id="@+id/et_amount"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/relbttn"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/hundred"
+                    android:text="+ Rs. 100"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/edittext_border"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/hundred"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/five_hundred"
+                    android:text="+ Rs. 500"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/edittext_border"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/five_hundred"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/one_thousand"
+                    android:text="+ Rs. 500"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/edittext_border"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:id="@+id/reqcashpick"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:text="Request Cash Pickup"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/payonline"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:text="Pay Online"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

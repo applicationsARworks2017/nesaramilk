@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/amaresh/Desktop/AmareshWorks/NeseraMilk/sdkui/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5155ee838d664fb0fd88ebee01b622708b21ed96">
+        <dex dex="/Users/amaresh/Desktop/AmareshWorks/NeseraMilk/app/build/intermediates/pre-dexed/debug/classes_52d795e7003e29aa36489c2dcf38a7b75e67f629.jar" />
+    </item>
+
+</items>

@@ -121,7 +121,7 @@ public class MessageActivity extends AppCompatActivity {
                 InputStream in = null;
                 int resCode = -1;
 
-                String link = Constants.LIVE_URL+Constants.FOLDER+Constants.WALLET_BALANCE;
+                String link = Constants.LIVE_URL+Constants.FOLDER+Constants.SEND_MESSAGE;
                 URL url = new URL(link);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(10000);

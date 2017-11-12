@@ -83,6 +83,9 @@
         <include layout="@layout/activity_my_subscription"
             android:visibility="gone"
             android:id="@+id/activity_my_subscription"></include>
+        <include layout="@layout/activity_my_mesage"
+            android:visibility="gone"
+            android:id="@+id/activity_my_message"></include>
         <include layout="@layout/activity_profile"
             android:visibility="gone"
             android:id="@+id/activity_settings"></include>

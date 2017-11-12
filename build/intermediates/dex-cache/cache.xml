@@ -2,13 +2,49 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/amaresh/Desktop/AmareshWorks/NeseraMilk/sdkui/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="5155ee838d664fb0fd88ebee01b622708b21ed96">
-        <dex dex="/Users/amaresh/Desktop/AmareshWorks/NeseraMilk/app/build/intermediates/pre-dexed/debug/classes_52d795e7003e29aa36489c2dcf38a7b75e67f629.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f386cc33723b90d64501e290d196697f030ea40f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\RN\.android\build-cache\7323826a7ca2d228028990170cd12cf9a216c99e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="feb035e98d4fef27ff2a6f45bbaac40c07a6596a">
+        <dex dex="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1b7db8f49e783f3f351612f02bfd06171d54e5a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\RN\.android\build-cache\ce4c7a290fe0c7c34fd98f1fc965759800b7f088\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="591e7c1eb05bda2bcee22d151402fd8d61ffeca9">
+        <dex dex="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2ebe8a57371f58f590bd8a8be258161d5708d8e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="369d5f88be4a5aad5a8fbac4cf7dc5911f85e503">
+        <dex dex="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9a5261bbece5517faf98c831ce60042ff525c683\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\RN\.android\build-cache\0ee3841aa04e312ac6201e914408b4c78f5e84a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="736dfac7308dfec5d2ceb07a7980df62eee8baae">
+        <dex dex="D:\RasmitaAndroidProjects\GIT\nesaramilk\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2329f7c8c65e0150a2111771ec2197f199f9b25f\classes.dex" />
     </item>
 
 </items>

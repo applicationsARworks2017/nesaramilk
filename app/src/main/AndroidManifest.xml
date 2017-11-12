@@ -117,6 +117,10 @@
             android:label="Delivery Report"
             android:screenOrientation="portrait"
             android:parentActivityName=".Activity.AdminActivity"></activity>
+        <activity android:name=".Activity.MessageDetilActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

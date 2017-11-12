@@ -35,24 +35,37 @@
         </menu>
 
     </item>
-    <item android:title="About">
+
+    <item android:title="Message">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/tab_message"
+                    android:icon="@drawable/ic_message_black_24dp"
+                    android:title="Message" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Profile">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/setting"
                     android:icon="@drawable/setting"
-                    android:title="Settings" />
+                    android:title="Profile" />
             </group>
         </menu>
 
     </item>
-    <item android:title="About">
+    <item android:title="Contats">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/about"
                     android:icon="@drawable/about"
-                    android:title="About" />
+                    android:title="Contacts"/>
             </group>
         </menu>
 

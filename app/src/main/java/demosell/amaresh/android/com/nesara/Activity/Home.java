@@ -52,8 +52,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import demosell.amaresh.android.com.nesara.Adapter.MessagelistAdapter;
 import demosell.amaresh.android.com.nesara.Adapter.SubscriptionListingAdapter;
 import demosell.amaresh.android.com.nesara.Adapter.TransactioListingAdapter;
+import demosell.amaresh.android.com.nesara.Pojo.Messagelist;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
 import demosell.amaresh.android.com.nesara.Pojo.TransactionHistoryList;
 import demosell.amaresh.android.com.nesara.R;
@@ -64,7 +66,7 @@ import demosell.amaresh.android.com.nesara.Util.Util;
 
 public class Home extends AppCompatActivity {
     private BottomBar bottomBar;
-    RelativeLayout homelayout,subscriptionLayout,settingslayout,contactlayout,activity_wallet;
+    RelativeLayout homelayout,subscriptionLayout,settingslayout,contactlayout,activity_wallet,activity_message;
     int id,server_status;
     int user_id;
     LinearLayout organicmilk;
@@ -91,9 +93,11 @@ public class Home extends AppCompatActivity {
     SwipeRefreshLayout thistory_rel;
     double Wallet_balance;
     int history_status;
-    ListView lv;
+    ListView lv,lvmessage;
     List<TransactionHistoryList> trans_list;
+    List<Messagelist> message_list;
     TransactioListingAdapter transadapter;
+    MessagelistAdapter adapter;
 
 
 
@@ -113,6 +117,7 @@ public class Home extends AppCompatActivity {
         tvNoRecordFoundText=(TextView)findViewById(R.id.tvNoRecordFoundText);
         // for wallet tab
         activity_wallet=(RelativeLayout)findViewById(R.id.activity_wallet);
+        activity_message=(RelativeLayout)findViewById(R.id.activity_my_message);
         tv_balance=(TextView)findViewById(R.id.tv_balance);
         lv=(ListView)findViewById(R.id.trans_listview);
         thistory_rel=(SwipeRefreshLayout)findViewById(R.id.thistory_rel);
@@ -201,6 +206,7 @@ public class Home extends AppCompatActivity {
 
         // subscribtionpage initializations
         lvSubscriptions=(ListView)findViewById(R.id.subscribtion_listView);
+        lvmessage=(ListView)findViewById(R.id.message_listView);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -316,6 +322,7 @@ public class Home extends AppCompatActivity {
                 switch (tabId) {
                     case R.id.tab_home:
                         activity_wallet.setVisibility(View.GONE);
+                        activity_message.setVisibility(View.GONE);
                         rel_notification.setVisibility(View.VISIBLE);
                         homelayout.setVisibility(View.VISIBLE);
                         contactlayout.setVisibility(View.GONE);
@@ -326,6 +333,7 @@ public class Home extends AppCompatActivity {
                         break;
                     case R.id.tab_wallet:
                         rel_notification.setVisibility(View.GONE);
+                        activity_message.setVisibility(View.GONE);
                         homelayout.setVisibility(View.GONE);
                         contactlayout.setVisibility(View.GONE);
                         settingslayout.setVisibility(View.GONE);
@@ -336,6 +344,7 @@ public class Home extends AppCompatActivity {
                         break;
                     case R.id.tab_subscribe:
                         activity_wallet.setVisibility(View.GONE);
+                        activity_message.setVisibility(View.GONE);
                         rel_notification.setVisibility(View.GONE);
                         homelayout.setVisibility(View.GONE);
                         settingslayout.setVisibility(View.GONE);
@@ -346,8 +355,22 @@ public class Home extends AppCompatActivity {
                         subscriptionLayout.setVisibility(View.VISIBLE);
                         subscriptionList();
                         break;
+                    case R.id.tab_message:
+                        activity_message.setVisibility(View.VISIBLE);
+                        activity_wallet.setVisibility(View.GONE);
+                        rel_notification.setVisibility(View.GONE);
+                        homelayout.setVisibility(View.GONE);
+                        settingslayout.setVisibility(View.GONE);
+                        contactlayout.setVisibility(View.GONE);
+                        pagehead.setText("Message");
+                        pagehead.setTypeface(Typeface.DEFAULT_BOLD);
+                        pagehead.setTextColor(Color.GRAY);
+                        subscriptionLayout.setVisibility(View.GONE);
+                        messageList();
+                        break;
                     case R.id.tab_setting:
                         activity_wallet.setVisibility(View.GONE);
+                        activity_message.setVisibility(View.GONE);
                         rel_notification.setVisibility(View.GONE);
                         homelayout.setVisibility(View.GONE);
                         subscriptionLayout.setVisibility(View.GONE);
@@ -361,6 +384,7 @@ public class Home extends AppCompatActivity {
 
                     case R.id.tab_about:
                         activity_wallet.setVisibility(View.GONE);
+                        activity_message.setVisibility(View.GONE);
                         rel_notification.setVisibility(View.GONE);
                         homelayout.setVisibility(View.GONE);
                         subscriptionLayout.setVisibility(View.GONE);
@@ -423,6 +447,16 @@ public class Home extends AppCompatActivity {
                 }
         });
 
+    }
+
+    private void messageList() {
+        if (Util.getNetworkConnectivityStatus(this)) {
+            String userid= String.valueOf(id);
+            getMessagedetails asyncTask = new getMessagedetails();
+            asyncTask.execute(userid);
+        }else {
+            Toast.makeText(this, "You are in Offline Mode", Toast.LENGTH_LONG).show();
+        }
     }
 
     private void Dologout() {
@@ -1477,4 +1511,144 @@ alternet_no:
     }
 
 
+    private class getMessagedetails extends AsyncTask<String, Void, Void> {
+
+        private static final String TAG = "SyncDetails";
+        ProgressDialog progress;
+
+        @Override
+        protected void onPreExecute() {
+            progress = ProgressDialog.show(Home.this, "Please Wait",
+                    "Loading Message List...", true);
+
+        }
+
+
+        @Override
+        protected Void doInBackground(String... params) {
+
+
+            try {
+                String _userid = params[0];
+                InputStream in = null;
+                int resCode = -1;
+                String link = Constants.LIVE_URL+Constants.FOLDER+Constants.GET_MESSAGE;
+                URL url = new URL(link);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setReadTimeout(10000);
+                conn.setConnectTimeout(15000);
+                conn.setRequestMethod("POST");
+                conn.setDoInput(true);
+                conn.setDoOutput(true);
+                conn.setAllowUserInteraction(false);
+                conn.setInstanceFollowRedirects(true);
+                conn.setRequestMethod("POST");
+
+                Uri.Builder builder = new Uri.Builder()
+                        .appendQueryParameter("user_id", _userid);
+
+                String query = builder.build().getEncodedQuery();
+
+                OutputStream os = conn.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(
+                        new OutputStreamWriter(os, "UTF-8"));
+                writer.write(query);
+                writer.flush();
+                writer.close();
+                os.close();
+
+                conn.connect();
+                resCode = conn.getResponseCode();
+                if (resCode == HttpURLConnection.HTTP_OK) {
+                    in = conn.getInputStream();
+                }
+                if (in == null) {
+                    return null;
+                }
+                BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+                String response = "", data = "";
+
+                while ((data = reader.readLine()) != null) {
+                    response += data + "\n";
+                }
+
+                Log.i(TAG, "Response : " + response);
+
+/*
+                *//**//*
+                *
+                * {
+                "notifications": [
+                    {
+                        "name": "murthy ",
+                        "mobile_no": "9845742268",
+                        "title": "kjh hjkh jkhjh",
+                        "message": "fjghdjfhgdfhgdh gdfghjdfgdkf jgjfgkjdf",
+                        "is_read": "0",
+                        "created": "20-08-2017 01:04 AM"
+                    }
+                ],
+                "status": 1,
+                "message": "Records Found"
+            }                                    *
+                * *//**//**/
+                if (response != null && response.length() > 0) {
+
+                    JSONObject res = new JSONObject(response);
+                    history_status=res.getInt("status");
+                    if(history_status==1){
+                        JSONArray user_list = res.getJSONArray("notifications");
+
+                        message_list = new ArrayList<Messagelist>();
+
+                        //db=new DBHelper(QAAnsweredListActivity.this);
+
+                        for (int i = 0; i < user_list.length(); i++) {
+
+                            JSONObject q_list_obj = user_list.getJSONObject(i);
+
+                            String name = q_list_obj.getString("name");
+                            String mobile_no = q_list_obj.getString("mobile_no");
+                            String title = q_list_obj.getString("title");
+                            String message = q_list_obj.getString("message");
+                            String is_read = q_list_obj.getString("is_read");
+                            String created = q_list_obj.getString("created");
+                            Messagelist s_list = new Messagelist(name, mobile_no, title,message,is_read,created);
+                            message_list.add(s_list);
+                        }
+                    }
+                    else{    // db.addAnsweredQuestionList(new AnswerDetails(qid,uid,q_title,qdesc,q_admin_desc,q_isanswer,q_ispublish,q_fullname,q_postdate,q_created));
+                        server_response="No History";
+                    }
+
+                }
+
+                return null;
+
+
+            } catch (Exception exception) {
+                Log.e(TAG, "LoginAsync : doInBackground", exception);
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void user) {
+            super.onPostExecute(user);
+            if(history_status==1) {
+                Collections.reverse(message_list); // this line is used to reverse the list
+                adapter = new MessagelistAdapter(Home.this, message_list);
+                lvmessage.setAdapter(adapter);
+            }
+            else{
+                TextView tvmsg=(TextView)findViewById(R.id.tvNoRecordFoundmessage);
+
+                lvmessage.setVisibility(View.GONE);
+                tvmsg.setVisibility(View.VISIBLE);
+            }
+            progress.dismiss();
+
+        }
+    }
 }

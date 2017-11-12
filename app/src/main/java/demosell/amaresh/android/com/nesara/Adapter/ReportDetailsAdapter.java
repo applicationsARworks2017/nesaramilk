@@ -75,7 +75,7 @@ public class ReportDetailsAdapter extends BaseAdapter {
         holder.tv_apartment.setText(_pos.getAppartment_name());
         holder.tv_flat.setText(_pos.getFlat_no());
         holder.tv_product.setText(_pos.getProduct_name());
-        holder.tv_quantity.setText("");
+        holder.tv_quantity.setText(_pos.getAmount());
         return convertView;
     }
 }

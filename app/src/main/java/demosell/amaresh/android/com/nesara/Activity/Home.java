@@ -30,6 +30,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nesara.amaresh.demosell.R;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -58,7 +59,6 @@ import demosell.amaresh.android.com.nesara.Adapter.TransactioListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.Messagelist;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
 import demosell.amaresh.android.com.nesara.Pojo.TransactionHistoryList;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 import demosell.amaresh.android.com.nesara.Util.Util;

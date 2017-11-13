@@ -23,6 +23,8 @@ import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -37,7 +39,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 
 public class CuponCodeActivity extends AppCompatActivity {

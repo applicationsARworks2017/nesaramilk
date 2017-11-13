@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -31,7 +33,6 @@ import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

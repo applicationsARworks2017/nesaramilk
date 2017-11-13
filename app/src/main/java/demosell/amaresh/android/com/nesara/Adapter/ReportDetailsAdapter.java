@@ -9,11 +9,12 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import java.util.ArrayList;
 
 import demosell.amaresh.android.com.nesara.Activity.ReportActivity;
 import demosell.amaresh.android.com.nesara.Pojo.ReportDetails;
-import demosell.amaresh.android.com.nesara.R;
 
 /**
  * Created by Amaresh on 10/18/17.

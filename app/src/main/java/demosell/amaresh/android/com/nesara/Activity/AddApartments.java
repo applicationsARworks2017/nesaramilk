@@ -15,6 +15,8 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -29,10 +31,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 import demosell.amaresh.android.com.nesara.Adapter.ApartmentListAdapter;
-import demosell.amaresh.android.com.nesara.Adapter.UserListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.Apartments;
-import demosell.amaresh.android.com.nesara.Pojo.Users;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

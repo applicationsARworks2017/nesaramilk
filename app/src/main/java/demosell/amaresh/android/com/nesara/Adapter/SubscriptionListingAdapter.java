@@ -23,6 +23,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -44,7 +46,6 @@ import demosell.amaresh.android.com.nesara.Activity.Home;
 import demosell.amaresh.android.com.nesara.Activity.Resumecalender;
 import demosell.amaresh.android.com.nesara.Activity.Subscription_edit;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

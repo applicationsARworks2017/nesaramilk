@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.nesara.amaresh.demosell.R;
 import com.payu.india.CallBackHandler.OnetapCallback;
 import com.payu.india.Extras.PayUChecksum;
 import com.payu.india.Extras.PayUSdkDetails;
@@ -46,7 +48,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 
 /**

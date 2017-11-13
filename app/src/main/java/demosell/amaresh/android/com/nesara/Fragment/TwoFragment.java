@@ -16,6 +16,8 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -40,7 +42,6 @@ import demosell.amaresh.android.com.nesara.Activity.Home;
 import demosell.amaresh.android.com.nesara.Activity.UserDetailsPage;
 import demosell.amaresh.android.com.nesara.Adapter.TransactioListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.TransactionHistoryList;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.nesara.amaresh.demosell.R;
 import com.squareup.timessquare.CalendarPickerView;
 
 import org.json.JSONObject;
@@ -38,7 +39,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

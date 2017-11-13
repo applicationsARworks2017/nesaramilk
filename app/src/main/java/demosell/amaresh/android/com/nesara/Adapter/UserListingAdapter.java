@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
+import com.nesara.amaresh.demosell.R;
 
 import java.util.ArrayList;
 
 import demosell.amaresh.android.com.nesara.Activity.AdminUserList;
 import demosell.amaresh.android.com.nesara.Pojo.Users;
-import demosell.amaresh.android.com.nesara.R;
 
 /**
  * Created by User on 20-08-2017.

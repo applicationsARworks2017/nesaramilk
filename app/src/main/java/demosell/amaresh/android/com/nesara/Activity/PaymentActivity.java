@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import demosell.amaresh.android.com.nesara.R;
+import com.nesara.amaresh.demosell.R;
+
 import demosell.amaresh.android.com.nesara.Util.Constants;
 
 

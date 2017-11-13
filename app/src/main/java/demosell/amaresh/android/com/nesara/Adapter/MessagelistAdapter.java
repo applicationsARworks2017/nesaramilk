@@ -12,6 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import java.util.List;
 
 import demosell.amaresh.android.com.nesara.Activity.Home;
@@ -19,7 +21,6 @@ import demosell.amaresh.android.com.nesara.Activity.MessageDetilActivity;
 import demosell.amaresh.android.com.nesara.Activity.TransactionHistory;
 import demosell.amaresh.android.com.nesara.Pojo.Messagelist;
 import demosell.amaresh.android.com.nesara.Pojo.TransactionHistoryList;
-import demosell.amaresh.android.com.nesara.R;
 
 /**
  * Created by RN on 11/11/2017.

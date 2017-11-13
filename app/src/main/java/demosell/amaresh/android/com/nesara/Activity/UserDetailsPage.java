@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.nesara.amaresh.demosell.R;
+
 import java.util.List;
 
 import demosell.amaresh.android.com.nesara.Adapter.ViewPagerAdapter;
@@ -15,7 +17,6 @@ import demosell.amaresh.android.com.nesara.Fragment.OneFragment;
 import demosell.amaresh.android.com.nesara.Fragment.ThreeFragment;
 import demosell.amaresh.android.com.nesara.Fragment.TwoFragment;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
-import demosell.amaresh.android.com.nesara.R;
 
 public class UserDetailsPage extends AppCompatActivity {
     Toolbar my_detailstoolbar;

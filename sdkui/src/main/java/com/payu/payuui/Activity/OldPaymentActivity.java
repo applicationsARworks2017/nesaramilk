@@ -40,7 +40,7 @@ import java.util.Map;
  * This class is deprecated. It is for CB version before 6.0.0
  */
 
-public class OldPaymentActivity  extends AppCompatActivity implements MagicRetryFragment.ActivityCallback{
+public class OldPaymentActivity  extends AppCompatActivity implements  MagicRetryFragment.ActivityCallback{
     Bundle bundle;
     String url;
     boolean cancelTransaction = false;
@@ -104,7 +104,7 @@ public class OldPaymentActivity  extends AppCompatActivity implements MagicRetry
 
         try {
             Class.forName("com.payu.custombrowser.Bank");
-            final Bank bank = new Bank() {
+            final  Bank bank = new Bank() {
                 @Override
                 public void registerBroadcast(BroadcastReceiver broadcastReceiver, IntentFilter filter) {
                     mReceiver = broadcastReceiver;

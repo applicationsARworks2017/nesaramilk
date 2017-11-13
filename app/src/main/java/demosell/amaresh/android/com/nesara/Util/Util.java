@@ -24,6 +24,9 @@ import android.util.TypedValue;
 import android.view.Display;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -45,7 +48,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.TimeZone;
 
-import demosell.amaresh.android.com.nesara.R;
 
 public class Util {
 

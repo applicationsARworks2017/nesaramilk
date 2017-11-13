@@ -16,6 +16,8 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -35,7 +37,6 @@ import java.util.ArrayList;
 
 import demosell.amaresh.android.com.nesara.Adapter.UserListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.Users;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

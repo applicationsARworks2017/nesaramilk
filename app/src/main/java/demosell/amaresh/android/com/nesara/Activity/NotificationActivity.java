@@ -3,7 +3,8 @@ package demosell.amaresh.android.com.nesara.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import demosell.amaresh.android.com.nesara.R;
+import com.nesara.amaresh.demosell.R;
+
 
 public class NotificationActivity extends AppCompatActivity {
 

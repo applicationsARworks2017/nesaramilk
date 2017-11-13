@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import demosell.amaresh.android.com.nesara.R;
+import com.nesara.amaresh.demosell.R;
+
 
 /**
  * Created by Rasmita on 7/18/2017.

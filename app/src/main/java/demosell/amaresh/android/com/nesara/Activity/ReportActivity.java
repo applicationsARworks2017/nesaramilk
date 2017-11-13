@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nesara.amaresh.demosell.R;
 import com.payu.magicretry.MainActivity;
 
 import org.json.JSONArray;
@@ -34,7 +35,6 @@ import java.util.Locale;
 
 import demosell.amaresh.android.com.nesara.Adapter.ReportDetailsAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.ReportDetails;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 

@@ -12,6 +12,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -28,7 +31,6 @@ import java.util.List;
 
 import demosell.amaresh.android.com.nesara.Adapter.TransactioListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.TransactionHistoryList;
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 import demosell.amaresh.android.com.nesara.Util.Util;
 

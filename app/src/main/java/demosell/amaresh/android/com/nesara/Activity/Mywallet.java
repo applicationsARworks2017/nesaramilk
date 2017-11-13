@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nesara.amaresh.demosell.R;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -28,7 +30,6 @@ import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 
-import demosell.amaresh.android.com.nesara.R;
 import demosell.amaresh.android.com.nesara.Util.Constants;
 import demosell.amaresh.android.com.nesara.Util.Util;
 

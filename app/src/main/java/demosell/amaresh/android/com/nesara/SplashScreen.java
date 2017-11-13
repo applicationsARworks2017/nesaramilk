@@ -5,6 +5,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.nesara.amaresh.demosell.R;
+
 import demosell.amaresh.android.com.nesara.Activity.AdminActivity;
 import demosell.amaresh.android.com.nesara.Activity.EnterPhone;
 import demosell.amaresh.android.com.nesara.Activity.Home;

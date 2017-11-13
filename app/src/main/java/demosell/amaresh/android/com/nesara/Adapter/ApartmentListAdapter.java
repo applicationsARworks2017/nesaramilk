@@ -8,12 +8,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.nesara.amaresh.demosell.R;
+
 import java.util.ArrayList;
 
 import demosell.amaresh.android.com.nesara.Activity.AddApartments;
 import demosell.amaresh.android.com.nesara.Pojo.Apartments;
-import demosell.amaresh.android.com.nesara.Pojo.Users;
-import demosell.amaresh.android.com.nesara.R;
 
 /**
  * Created by Amaresh on 9/22/17.

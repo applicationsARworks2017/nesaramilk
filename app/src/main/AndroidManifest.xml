@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.nesara.amaresh.demosell">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -25,10 +26,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.EnterPhone"
+            android:name="demosell.amaresh.android.com.nesara.Activity.EnterPhone"
             android:label="Registration" />
         <activity
-            android:name=".Activity.AdminActivity"
+            android:name="demosell.amaresh.android.com.nesara.Activity.AdminActivity"
             android:label="Dash Board">
 
             <!--
@@ -40,84 +41,85 @@
             -->
         </activity>
         <activity
-            android:name=".Activity.AdminDetails"
+            android:name="demosell.amaresh.android.com.nesara.Activity.AdminDetails"
             android:label="AdminDetails" />
-        <activity android:name=".Activity.PayMentGateWayPayUbiz" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.PayMentGateWayPayUbiz" />
         <activity
-            android:name=".Activity.Home"
+            android:name="demosell.amaresh.android.com.nesara.Activity.Home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.TransactionHistory"
-            android:parentActivityName=".Activity.Home"
+            android:name="demosell.amaresh.android.com.nesara.Activity.TransactionHistory"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.AddSubscription"
+            android:name="demosell.amaresh.android.com.nesara.Activity.AddSubscription"
             android:label="@string/add_sub"
-            android:parentActivityName=".Activity.Home" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home" />
         <activity
-            android:name=".Activity.Mywallet"
+            android:name="demosell.amaresh.android.com.nesara.Activity.Mywallet"
             android:label="@string/my_wallet"
-            android:parentActivityName=".Activity.Home" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home" />
         <activity
-            android:name=".Activity.PaymentActivity"
+            android:name="com.payu.payuui.Activity.PaymentsActivity"
             android:label="@string/pay_confirm"
-            android:parentActivityName=".Activity.Home" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home"
+            tools:replace="android:label" />
         <activity
-            android:name=".Activity.Subscription_edit"
+            android:name="demosell.amaresh.android.com.nesara.Activity.Subscription_edit"
             android:label="@string/edit_sub"
-            android:parentActivityName=".Activity.Home" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home" />
 
-        <receiver android:name=".Util.OtpReader">
+        <receiver android:name="demosell.amaresh.android.com.nesara.Util.OtpReader">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".Activity.DeliveryDetails"
+            android:name="demosell.amaresh.android.com.nesara.Activity.DeliveryDetails"
             android:label="Delivery Details" />
-        <activity android:name=".Activity.CalenderView" />
-        <activity android:name=".Activity.Resumecalender" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.CalenderView" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.Resumecalender" />
         <activity
-            android:name=".Activity.NotificationActivity"
+            android:name="demosell.amaresh.android.com.nesara.Activity.NotificationActivity"
             android:label="Notifications"
-            android:parentActivityName=".Activity.Home" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home" />
         <activity
-            android:name=".Activity.AdminUserList"
+            android:name="demosell.amaresh.android.com.nesara.Activity.AdminUserList"
             android:label="Users"
-            android:parentActivityName=".Activity.AdminActivity" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity" />
         <activity
-            android:name=".Activity.UserDetailsPage"
+            android:name="demosell.amaresh.android.com.nesara.Activity.UserDetailsPage"
             android:label="Details"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.SetProductPrice"
+            android:name="demosell.amaresh.android.com.nesara.Activity.SetProductPrice"
             android:label="Set Price"
-            android:parentActivityName=".Activity.AdminActivity" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity" />
         <activity
-            android:name=".Activity.MessageActivity"
+            android:name="demosell.amaresh.android.com.nesara.Activity.MessageActivity"
             android:label="Message"
-            android:parentActivityName=".Activity.AdminActivity" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity" />
         <activity
-            android:name=".Activity.ContactsActivity"
+            android:name="demosell.amaresh.android.com.nesara.Activity.ContactsActivity"
             android:label="All Users"
-            android:parentActivityName=".Activity.MessageActivity" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.MessageActivity" />
         <activity
-            android:name=".Activity.CuponCodeActivity"
+            android:name="demosell.amaresh.android.com.nesara.Activity.CuponCodeActivity"
             android:label="Generate Discount Cupon"
-            android:parentActivityName=".Activity.AdminActivity" />
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity" />
         <activity
-            android:name=".Activity.AddApartments"
+            android:name="demosell.amaresh.android.com.nesara.Activity.AddApartments"
             android:label="Apartments" />
         <activity
-            android:name=".Activity.Addapartmentdeatils"
+            android:name="demosell.amaresh.android.com.nesara.Activity.Addapartmentdeatils"
             android:label="Enter Apartment Details"
-            android:parentActivityName=".Activity.AddApartments" />
-        <activity android:name=".Activity.ReportActivity"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AddApartments" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.ReportActivity"
             android:label="Delivery Report"
             android:screenOrientation="portrait"
-            android:parentActivityName=".Activity.AdminActivity"></activity>
-        <activity android:name=".Activity.MessageDetilActivity"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity"></activity>
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.MessageDetilActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
             ></activity>

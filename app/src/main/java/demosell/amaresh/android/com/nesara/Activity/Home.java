@@ -98,6 +98,7 @@ public class Home extends AppCompatActivity {
     List<Messagelist> message_list;
     TransactioListingAdapter transadapter;
     MessagelistAdapter adapter;
+    String Message_id;
 
 
 
@@ -1580,12 +1581,13 @@ alternet_no:
                 * {
                 "notifications": [
                     {
-                        "name": "murthy ",
-                        "mobile_no": "9845742268",
-                        "title": "kjh hjkh jkhjh",
-                        "message": "fjghdjfhgdfhgdh gdfghjdfgdkf jgjfgkjdf",
-                        "is_read": "0",
-                        "created": "20-08-2017 01:04 AM"
+                      "id": "95",
+                        "name": "hssjj",
+                        "mobile_no": "8594938936",
+                        "title": null,
+                        "message": null,
+                        "is_read": "1",
+                        "created": "12-11-2017 08:00 AM"
                     }
                 ],
                 "status": 1,
@@ -1598,22 +1600,20 @@ alternet_no:
                     history_status=res.getInt("status");
                     if(history_status==1){
                         JSONArray user_list = res.getJSONArray("notifications");
-
                         message_list = new ArrayList<Messagelist>();
-
-                        //db=new DBHelper(QAAnsweredListActivity.this);
-
                         for (int i = 0; i < user_list.length(); i++) {
 
                             JSONObject q_list_obj = user_list.getJSONObject(i);
 
+                             Message_id = q_list_obj.getString("id");
                             String name = q_list_obj.getString("name");
                             String mobile_no = q_list_obj.getString("mobile_no");
                             String title = q_list_obj.getString("title");
                             String message = q_list_obj.getString("message");
                             String is_read = q_list_obj.getString("is_read");
                             String created = q_list_obj.getString("created");
-                            Messagelist s_list = new Messagelist(name, mobile_no, title,message,is_read,created);
+                            String isread = q_list_obj.getString("is_read");
+                            Messagelist s_list = new Messagelist(Message_id,name, mobile_no, title,message,is_read,created,isread);
                             message_list.add(s_list);
                         }
                     }
@@ -1637,7 +1637,6 @@ alternet_no:
         protected void onPostExecute(Void user) {
             super.onPostExecute(user);
             if(history_status==1) {
-                Collections.reverse(message_list); // this line is used to reverse the list
                 adapter = new MessagelistAdapter(Home.this, message_list);
                 lvmessage.setAdapter(adapter);
             }

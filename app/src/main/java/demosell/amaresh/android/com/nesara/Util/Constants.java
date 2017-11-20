@@ -46,4 +46,5 @@ public class Constants {
     public static final String N_USER_CITY = "user_city";
     public static final String N_USER_CREATED = "user_created";
     public static final String N_USER_TYPE ="user_type" ;
+    public static final String MESSAGE_ID ="message_id" ;
 }

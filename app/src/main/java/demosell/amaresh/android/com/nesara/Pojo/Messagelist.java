@@ -5,14 +5,34 @@ package demosell.amaresh.android.com.nesara.Pojo;
  */
 
 public class Messagelist {
-    String name,mobile_no,title,mesage,is_read,created;
-    public Messagelist(String name, String mobile_no, String title, String message, String is_read, String created) {
+    String name,mobile_no,title,mesage,is_read,created,isread,Message_id;
+
+    public String getMessage_id() {
+        return Message_id;
+    }
+
+    public void setMessage_id(String message_id) {
+        Message_id = message_id;
+    }
+
+    public Messagelist(String Message_id, String name, String mobile_no, String title, String message, String is_read, String created, String isread) {
         this.name=name;
         this.mobile_no=mobile_no;
         this.title=title;
         this.mesage=message;
         this.is_read=is_read;
         this.created=created;
+        this.isread=isread;
+        this.Message_id=Message_id;
+
+    }
+
+    public String getIsread() {
+        return isread;
+    }
+
+    public void setIsread(String isread) {
+        this.isread = isread;
     }
 
     public String getName() {

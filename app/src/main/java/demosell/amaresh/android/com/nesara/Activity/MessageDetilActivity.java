@@ -3,7 +3,6 @@ package demosell.amaresh.android.com.nesara.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -52,7 +51,7 @@ public class MessageDetilActivity extends BaseActivity{
         okay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MessageDetilActivity.this,MessageActivity.class);
+                Intent intent=new Intent(MessageDetilActivity.this,Home.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);

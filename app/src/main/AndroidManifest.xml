@@ -123,6 +123,25 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
             ></activity>
+
+        <!-- Firebase Notifications -->
+        <service android:name="demosell.amaresh.android.com.nesara.Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="demosell.amaresh.android.com.nesara.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:exported="false"
+            android:name="demosell.amaresh.android.com.nesara.Firebase.MyJobService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

@@ -3,12 +3,84 @@
 
     <item
         is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/5180a685cc6486f97edfa251146000215feaa91b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_eaf44379b9f55aa3e490b4fe92bf7da43a4294e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/4eca5e2a5e54cb32243e0d91c61cf183479e2235/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_58d0278c33e01ccf1791001d43a099591a64f64f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/058453242af97dea8e20110c4a7c8c9e01189a07/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_5e0b24d3ff88bd23942e71ddbc22917fb23b58ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/mobileapplication/Desktop/androidApps/nesaramilk/sdkui/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="8a8878b83ed613869c7ec6465f2593899e5066df">
         <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_94f3a17e159de38c6dc4afac341fc726ebec2a76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/8893284e508ff3a3e2dfa6a9d3778aea8a295f74/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d39f676be8400123523882d189a1d84040d34339">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_8ad914163a3b07e3a54d689f2c8c8169460f64f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/dc297b46ff43d584f5af5bd2be431ff807f3d2a4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_a8733271c3ea6319fc79d0fe0bc1b8709bfc0dfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/5accc0ede45173c0e5eac39936ad7dd5c6a5d304/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a91bdc0f8065d024f214ed8b33f8b3a79e4031c2">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_07b8571ce046635770ec75f2defcc54aef41f037.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/d5f0b8a9a47cb8364f5b9e816d494b71515c02d3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_39cd2d2ff69fa12a701ff633cfd502a9eb7112b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mobileapplication/.android/build-cache/7f3237ccdadf979a11c594c67e5a248700eb5438/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="/Users/mobileapplication/Desktop/androidApps/nesaramilk/app/build/intermediates/pre-dexed/debug/classes_e9dfddc5e771ccc23d4542288a094f9fb6d81482.jar" />
     </item>
 
 </items>

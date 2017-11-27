@@ -33,8 +33,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import demosell.amaresh.android.com.nesara.Activity.AdminUserList;
-import demosell.amaresh.android.com.nesara.Activity.Home;
 import demosell.amaresh.android.com.nesara.Activity.UserDetailsPage;
 import demosell.amaresh.android.com.nesara.Adapter.SubscriptionListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
@@ -256,6 +254,7 @@ public class OneFragment extends Fragment {
                             String s_user_id = q_list_obj.getString("user_id");
                             String s_product_name = q_list_obj.getString("prosuct_name");
                             String s_quantity = q_list_obj.getString("quentity");
+                            String s_liter = q_list_obj.getString("weight_type");
                             String s_delivery_type = q_list_obj.getString("delivery_type");
                             String s_start_date = q_list_obj.getString("start_date");
                             String s_end_date = q_list_obj.getString("end_date");
@@ -263,7 +262,7 @@ public class OneFragment extends Fragment {
                             String is_stop = q_list_obj.getString("is_stop");
 
                             SubscriptionListing s_list = new SubscriptionListing(s_id, s_user_id, s_product_name, s_quantity,
-                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop);
+                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop,s_liter);
                             subList.add(s_list);
 
                         }

@@ -5,11 +5,11 @@ package demosell.amaresh.android.com.nesara.Pojo;
  */
 
 public class SubscriptionListing {
-    String id,s_user_id,product_name,quantity,delivery_type,start_date,end_date,price_id,is_stop;
+    String id,s_user_id,product_name,quantity,delivery_type,start_date,end_date,price_id,is_stop,s_liter;
 
 
     public SubscriptionListing(String id, String s_user_id, String product_name, String quantity, String delivery_type,
-                               String start_date, String end_date, String price_id, String is_stop) {
+                               String start_date, String end_date, String price_id, String is_stop,String s_liter) {
 
         this.id=id;
         this.s_user_id=s_user_id;
@@ -20,8 +20,18 @@ public class SubscriptionListing {
         this.end_date=end_date;
         this.price_id=price_id;
         this.is_stop=is_stop;
+        this.s_liter=s_liter;
 
     }
+
+    public String getS_liter() {
+        return s_liter;
+    }
+
+    public void setS_liter(String s_liter) {
+        this.s_liter = s_liter;
+    }
+
     public String getIs_stop() {
         return is_stop;
     }

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "170794814573",
+    "firebase_url": "https://nesaramilk-e4fef.firebaseio.com",
+    "project_id": "nesaramilk-e4fef",
+    "storage_bucket": "nesaramilk-e4fef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170794814573:android:2b1d72fc0f01c38e",
+        "android_client_info": {
+          "package_name": "com.nesara.amaresh.demosell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170794814573-9lab8fdp83vs0ua02req32g3bijsi2se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nesara.amaresh.demosell",
+            "certificate_hash": "0926da27c58a4fc21e4be8a8ebee976d59b0e5c9"
+          }
+        },
+        {
+          "client_id": "170794814573-fqps49v41g0sna3kfn5kb1a69jiegtbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtn0CBXDKMf-sgg1hvfqPc5IEw2t9WO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170794814573-fqps49v41g0sna3kfn5kb1a69jiegtbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

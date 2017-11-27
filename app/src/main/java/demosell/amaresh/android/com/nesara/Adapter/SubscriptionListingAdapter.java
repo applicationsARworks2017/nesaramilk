@@ -132,7 +132,8 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         holder.Im_edit.setTag(position);
 
 
-        holder.Product_type.setText(user_pos.getProduct_name());
+        String ltr_qunty=user_pos.getQuantity()+" "+user_pos.getS_liter();
+        holder.Product_type.setText(user_pos.getProduct_name()+" "+","+" "+ltr_qunty);
         holder.Delivery_type.setText(user_pos.getDelivery_type());
         holder.Start_date.setText(user_pos.getStart_date());
         holder.End_date.setText(user_pos.getEnd_date());

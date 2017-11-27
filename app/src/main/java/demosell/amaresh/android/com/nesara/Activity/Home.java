@@ -79,7 +79,7 @@ public class Home extends AppCompatActivity {
     String user_mobile_number,user_name,user_email,user_location,
             user_locality,user_house,user_address,user_city,user_otp,user_created,user_type;
     SubscriptionListingAdapter qadapter;
-    String s_id,s_user_id,s_product_name,s_quantity,s_delivery_type,s_start_date,s_end_date,s_price_id;
+    String s_id,s_user_id,s_product_name,s_quantity,s_delivery_type,s_start_date,s_end_date,s_price_id,s_liter;
     List<SubscriptionListing> subList;
     ListView lvSubscriptions;
     String userid,name,phone,altphone,email,appartment,flat,phase,city,server_message,sname,sappartment,sflat,sphase,scity;
@@ -977,6 +977,7 @@ public class Home extends AppCompatActivity {
                             s_user_id = q_list_obj.getString("user_id");
                             s_product_name = q_list_obj.getString("prosuct_name");
                             s_quantity = q_list_obj.getString("quentity");
+                            s_liter = q_list_obj.getString("weight_type");
                             s_delivery_type = q_list_obj.getString("delivery_type");
                             s_start_date = q_list_obj.getString("start_date");
                             s_end_date = q_list_obj.getString("end_date");
@@ -985,7 +986,7 @@ public class Home extends AppCompatActivity {
 
 
                             SubscriptionListing s_list = new SubscriptionListing(s_id, s_user_id, s_product_name, s_quantity,
-                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop);
+                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop,s_liter);
                             subList.add(s_list);
 
                         }

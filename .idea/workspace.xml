@@ -10,89 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfc515c8-0507-4f6d-9acb-58c37643be89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_common_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_core_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_iid_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_jobdispatcher_0_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_messaging_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_basement_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_9_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/google-services.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/google-services.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseMessagingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyJobService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Config.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/NotificationUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-47-41-286.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-49-04-297.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-51-22-710.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-54-22-240.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-54-25-125.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-54-48-501.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-56-48-820.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-57-18-246.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-59-03-610.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-59-05-974.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-14-23-59-19-767.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-15-00-00-05-304.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-13-53-091.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-14-08-451.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-25-26-566.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-26-35-694.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-28-28-037.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-30-50-810.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-10-40-47-600.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-16-14-243.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-19-20-547.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-21-28-855.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-23-51-028.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-26-12-590.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-32-26-002.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-36-07-033.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-39-07-215.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-45-55-642.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-55-05-443.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-11-56-06-011.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-12-47-17-729.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-12-50-18-134.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-12-52-05-356.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-12-52-07-825.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-20-12-52-34-639.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-22-20-56-37-062.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-22-20-58-45-548.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-23-10-11-30-162.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-23-10-11-44-087.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-23-10-12-29-227.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-23-10-13-41-869.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/app-release.apk" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_sdkui_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_sdkui_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_sdkui_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_sdkui_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/EnterPhone.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/EnterPhone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Home.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Home.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/SubscriptionListingAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/SubscriptionListingAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Fragment/OneFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Fragment/OneFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/SubscriptionListing.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/SubscriptionListing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/deliverlist.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/deliverlist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/ReportDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/ReportDetails.java" />
     </list>
     <ignored path="nesaramilk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -129,21 +57,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Home.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="979" column="71" selection-start-line="979" selection-start-column="60" selection-end-line="979" selection-end-column="71" />
+            <state relative-caret-position="213">
+              <caret line="443" column="58" selection-start-line="443" selection-start-column="58" selection-end-line="443" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deliverlist.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/deliverlist.xml">
+      <file leaf-file-name="AddSubscription.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/AddSubscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="303">
+              <caret line="651" column="62" selection-start-line="651" selection-start-column="62" selection-end-line="651" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_subscription.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_subscription.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="268" column="61" selection-start-line="268" selection-start-column="57" selection-end-line="268" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -152,22 +90,139 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscriptionListing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/SubscriptionListing.java">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="11" column="113" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="113" />
+            <state relative-caret-position="105">
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyJobService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyJobService.java">
+      <file leaf-file-name="SubscriptionListingAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/SubscriptionListingAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="1230">
+              <caret line="135" column="86" selection-start-line="134" selection-start-column="8" selection-end-line="135" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2520#2521#0" expanded="false" />
+                <element signature="e#2566#2567#0" expanded="false" />
+                <element signature="e#2623#2624#0" expanded="false" />
+                <element signature="e#2654#2655#0" expanded="false" />
+                <element signature="e#3007#3008#0" expanded="false" />
+                <element signature="e#3031#3032#0" expanded="false" />
+                <element signature="e#11691#11692#0" expanded="false" />
+                <element signature="e#11770#11771#0" expanded="false" />
+                <element signature="e#12721#12722#0" expanded="false" />
+                <element signature="e#12765#12766#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2505">
+              <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyFirebaseInstanceIDService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportDetailsAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#900#901#0" expanded="false" />
+                <element signature="e#935#936#0" expanded="false" />
+                <element signature="e#992#993#0" expanded="false" />
+                <element signature="e#1019#1020#0" expanded="false" />
+                <element signature="e#1076#1077#0" expanded="false" />
+                <element signature="e#1107#1108#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/ReportDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
+              <folding>
+                <element signature="e#279#280#0" expanded="false" />
+                <element signature="e#304#305#0" expanded="false" />
+                <element signature="e#340#341#0" expanded="false" />
+                <element signature="e#368#369#0" expanded="false" />
+                <element signature="e#410#411#0" expanded="false" />
+                <element signature="e#448#449#0" expanded="false" />
+                <element signature="e#597#598#0" expanded="false" />
+                <element signature="e#626#627#0" expanded="false" />
+                <element signature="e#670#671#0" expanded="false" />
+                <element signature="e#706#707#0" expanded="false" />
+                <element signature="e#742#743#0" expanded="false" />
+                <element signature="e#774#775#0" expanded="false" />
+                <element signature="e#824#825#0" expanded="false" />
+                <element signature="e#866#867#0" expanded="false" />
+                <element signature="e#897#898#0" expanded="false" />
+                <element signature="e#924#925#0" expanded="false" />
+                <element signature="e#964#965#0" expanded="false" />
+                <element signature="e#996#997#0" expanded="false" />
+                <element signature="e#1030#1031#0" expanded="false" />
+                <element signature="e#1060#1061#0" expanded="false" />
+                <element signature="e#1106#1107#0" expanded="false" />
+                <element signature="e#1144#1145#0" expanded="false" />
+                <element signature="e#1178#1179#0" expanded="false" />
+                <element signature="e#1208#1209#0" expanded="false" />
+                <element signature="e#1254#1255#0" expanded="false" />
+                <element signature="e#1292#1293#0" expanded="false" />
+                <element signature="e#1329#1330#0" expanded="false" />
+                <element signature="e#1362#1363#0" expanded="false" />
+                <element signature="e#1414#1415#0" expanded="false" />
+                <element signature="e#1458#1459#0" expanded="false" />
+                <element signature="e#1500#1501#0" expanded="false" />
+                <element signature="e#1538#1539#0" expanded="false" />
+                <element signature="e#1693#1694#0" expanded="false" />
+                <element signature="e#1728#1729#0" expanded="false" />
+                <element signature="e#1784#1785#0" expanded="false" />
+                <element signature="e#1832#1833#0" expanded="false" />
+                <element signature="e#2639#2640#0" expanded="false" />
+                <element signature="e#2677#2678#0" expanded="false" />
+                <element signature="e#2714#2715#0" expanded="false" />
+                <element signature="e#2747#2748#0" expanded="false" />
+                <element signature="e#2799#2800#0" expanded="false" />
+                <element signature="e#2843#2844#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3127,7 +3182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/AdminActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/AdminDetails.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/AdminUserList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/UserListingAdapter.java" />
@@ -3144,8 +3198,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/NotificationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/PaymentActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/PayMentGateWayPayUbiz.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Resumecalender.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/SetProductPrice.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Subscription_edit.java" />
@@ -3174,10 +3226,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyJobService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseMessagingService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/EnterPhone.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Fragment/OneFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/deliverlist.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/ReportDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java" />
       </list>
     </option>
   </component>
@@ -3321,69 +3376,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nesaramilk" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demosell" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amaresh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nesara" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PRConnectIIIT-djena" />
     <property name="device.picker.selection" value="1e3cccdc" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/.." />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="DEBUGGABLE_DEVICE" value="lenovo-lenovo_a7010a48-1e3cccdc" />
+    <property name="DEBUGGABLE_DEVICE" value="lenovo-lenovo_k33a42-1e3cccdc" />
     <property name="DEBUGGABLE_PROCESS" value="com.nesara.amaresh.demosell" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Java" />
@@ -3916,33 +3933,30 @@
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java</url>
+          <line>202</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Subscription_edit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="457" column="46" selection-start-line="457" selection-start-column="46" selection-end-line="457" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/UserDetailsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Fragment/SubscriptionFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Fragment/ThreeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -4095,7 +4109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="43" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -4143,7 +4156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4158,18 +4170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#1167#1168#0" expanded="false" />
-            <element signature="e#1207#1208#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4184,31 +4184,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyJobService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseMessagingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4216,17 +4195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/SubscriptionListingAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4234,29 +4202,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="291" column="46" selection-start-line="291" selection-start-column="46" selection-end-line="291" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/SubscriptionListing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="146">
+          <caret line="11" column="113" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyJobService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/deliverlist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
+        <state relative-caret-position="435">
           <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
         </state>
@@ -4265,26 +4230,152 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/SubscriptionListingAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="135" column="86" selection-start-line="134" selection-start-column="8" selection-end-line="135" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2520#2521#0" expanded="false" />
+            <element signature="e#2566#2567#0" expanded="false" />
+            <element signature="e#2623#2624#0" expanded="false" />
+            <element signature="e#2654#2655#0" expanded="false" />
+            <element signature="e#3007#3008#0" expanded="false" />
+            <element signature="e#3031#3032#0" expanded="false" />
+            <element signature="e#11691#11692#0" expanded="false" />
+            <element signature="e#11770#11771#0" expanded="false" />
+            <element signature="e#12721#12722#0" expanded="false" />
+            <element signature="e#12765#12766#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/ReportActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="141" column="60" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="60" />
+        <state relative-caret-position="2505">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Firebase/MyFirebaseInstanceIDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/SubscriptionListing.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Adapter/ReportDetailsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="11" column="113" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="113" />
+        <state relative-caret-position="945">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#935#936#0" expanded="false" />
+            <element signature="e#992#993#0" expanded="false" />
+            <element signature="e#1019#1020#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1107#1108#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Pojo/ReportDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
+          <folding>
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#742#743#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#897#898#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#996#997#0" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1060#1061#0" expanded="false" />
+            <element signature="e#1106#1107#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1178#1179#0" expanded="false" />
+            <element signature="e#1208#1209#0" expanded="false" />
+            <element signature="e#1254#1255#0" expanded="false" />
+            <element signature="e#1292#1293#0" expanded="false" />
+            <element signature="e#1329#1330#0" expanded="false" />
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1500#1501#0" expanded="false" />
+            <element signature="e#1538#1539#0" expanded="false" />
+            <element signature="e#1693#1694#0" expanded="false" />
+            <element signature="e#1728#1729#0" expanded="false" />
+            <element signature="e#1784#1785#0" expanded="false" />
+            <element signature="e#1832#1833#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2677#2678#0" expanded="false" />
+            <element signature="e#2714#2715#0" expanded="false" />
+            <element signature="e#2747#2748#0" expanded="false" />
+            <element signature="e#2799#2800#0" expanded="false" />
+            <element signature="e#2843#2844#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="979" column="71" selection-start-line="979" selection-start-column="60" selection-end-line="979" selection-end-column="71" />
+        <state relative-caret-position="213">
+          <caret line="443" column="58" selection-start-line="443" selection-start-column="58" selection-end-line="443" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_subscription.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="268" column="61" selection-start-line="268" selection-start-column="57" selection-end-line="268" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/demosell/amaresh/android/com/nesara/Activity/AddSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="651" column="62" selection-start-line="651" selection-start-column="62" selection-end-line="651" selection-end-column="62" />
           <folding />
         </state>
       </provider>

@@ -4,8 +4,8 @@ import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nesara.amaresh.demosell.R;
-import com.payu.magicretry.MainActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -220,10 +219,13 @@ public class ReportActivity extends AppCompatActivity {
                             String block_name = o_list_obj.getString("block_name");
                             String appartment_name = o_list_obj.getString("appartment_name");
                             String product_name = o_list_obj.getString("product_name");
+                            String s_quantity = o_list_obj.getString("quentity");
+                            String s_liter = o_list_obj.getString("weight_type");
                             /*String appartment = o_list_obj.getString("plot_no");
                             String photo = o_list_obj.getString("photo");*/
 
-                            ReportDetails list1 = new ReportDetails(id,subscription_id,amount,mobile_no,name,flat_no,address,block_name,appartment_name,product_name);
+                            ReportDetails list1 = new ReportDetails(id,subscription_id,amount,mobile_no,name,flat_no,address,block_name,
+                                    appartment_name,product_name,s_quantity,s_liter);
                             deliveryDetailsArrayList.add(list1);
                         }
                     }

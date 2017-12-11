@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.nesara.amaresh.demosell.R;
@@ -73,10 +72,11 @@ public class ReportDetailsAdapter extends BaseAdapter {
         holder.tv_product.setTag(position);
         holder.tv_quantity.setTag(position);
 
+        String ltr_qunty=_pos.getS_quantity()+" "+_pos.getS_liter();
+        holder.tv_quantity.setText(ltr_qunty);
         holder.tv_apartment.setText(_pos.getAppartment_name());
         holder.tv_flat.setText(_pos.getFlat_no());
         holder.tv_product.setText(_pos.getProduct_name());
-        holder.tv_quantity.setText(_pos.getAmount());
         return convertView;
     }
 }

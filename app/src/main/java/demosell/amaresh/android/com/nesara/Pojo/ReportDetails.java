@@ -5,7 +5,7 @@ package demosell.amaresh.android.com.nesara.Pojo;
  */
 
 public class ReportDetails {
-    String id,subscription_id,amount,mobile_no,name,flat_no,address,block_name,appartment_name,product_name;
+    String id,subscription_id,amount,mobile_no,name,flat_no,address,block_name,appartment_name,product_name,s_quantity,s_liter;
 
     public String getId() {
         return id;
@@ -88,7 +88,8 @@ public class ReportDetails {
     }
 
     public ReportDetails(String id, String subscription_id, String amount, String mobile_no,
-                         String name, String flat_no, String address, String block_name, String appartment_name, String product_name) {
+                         String name, String flat_no, String address, String block_name, String appartment_name,
+                         String product_name,String s_quantity,String s_liter) {
 
         this.id=id;
         this.subscription_id=subscription_id;
@@ -100,7 +101,25 @@ public class ReportDetails {
         this.block_name=block_name;
         this.appartment_name=appartment_name;
         this.product_name=product_name;
+        this.s_quantity=s_quantity;
+        this.s_liter=s_liter;
 
 
+    }
+
+    public String getS_liter() {
+        return s_liter;
+    }
+
+    public void setS_liter(String s_liter) {
+        this.s_liter = s_liter;
+    }
+
+    public String getS_quantity() {
+        return s_quantity;
+    }
+
+    public void setS_quantity(String s_quantity) {
+        this.s_quantity = s_quantity;
     }
 }

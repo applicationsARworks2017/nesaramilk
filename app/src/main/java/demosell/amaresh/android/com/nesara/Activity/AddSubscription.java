@@ -144,13 +144,6 @@ public class AddSubscription extends AppCompatActivity {
         if (product_id == 2) {
             everydayimg.setBackgroundResource(R.drawable.a2desinew);
         }
-        if (product_id == 1) {
-            everydayimg.setImageResource(R.drawable.regular_new);
-        }
-        if (product_id == 2) {
-            everydayimg.setImageResource(R.drawable.a2desinew);
-
-        }
 
         //for wallet
 

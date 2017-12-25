@@ -2,12 +2,10 @@ package demosell.amaresh.android.com.nesara.Activity;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -59,11 +57,11 @@ public class Subscription_edit extends BaseActivity {
     Double a_qnty=0.0;
     Double qnty=0.0;
     String changing_price="",changing_amount="";
-    ImageView e_plus,e_minus;
+    LinearLayout e_plus,e_minus;
     Calendar myCalendar;
     LinearLayout lay_everyday,lay_alernate,lay_monwedfri,lay_montofri;
-    ImageView everyday,alernate,monwedfri,montofri;
-    String delivery_type;
+    ImageView everyday,alernate,monwedfri,montofri,imgmilk;
+    String delivery_type,product_name;
 
 
     @Override
@@ -73,15 +71,16 @@ public class Subscription_edit extends BaseActivity {
 
         user_id= getSharedPreferences(Constants.SHAREDPREFERENCE_KEY, 0).getInt(Constants.N_USER_ID, 0);
         EditVprice=(TextView)findViewById(R.id.edit_vprice);
-        e_minus=(ImageView)findViewById(R.id.edit_min);
-        e_plus=(ImageView)findViewById(R.id.edit_plus);
-        Start=(EditText)findViewById(R.id.s_edit_date);
-        End=(EditText)findViewById(R.id.e_edit_date);
+        e_minus=(LinearLayout) findViewById(R.id.min);
+        e_plus=(LinearLayout) findViewById(R.id.plus);
+        Start=(EditText) findViewById(R.id.s_date);
+        End=(EditText) findViewById(R.id.e_date);
         myCalendar = Calendar.getInstance();
         everyday=(ImageView)findViewById(R.id.edit_everydayimg);
         alernate=(ImageView)findViewById(R.id.edit_alternateimg);
         monwedfri=(ImageView)findViewById(R.id.edit_mn_wedimg);
         montofri=(ImageView)findViewById(R.id.edit_mn_friimg);
+        imgmilk=(ImageView)findViewById(R.id.imgmilk);
 
         lay_everyday=(LinearLayout)findViewById(R.id.edit_everyday);
         lay_alernate=(LinearLayout)findViewById(R.id.edit_alternate);
@@ -91,6 +90,15 @@ public class Subscription_edit extends BaseActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             id = extras.getString("id");
+            product_name = extras.getString("PRODUCTNAME");
+        }
+
+        if(product_name.contentEquals("Regular Milk")){
+            imgmilk.setBackgroundResource(R.drawable.regular_new);
+        }
+        else{
+            imgmilk.setBackgroundResource(R.drawable.a2desinew);
+
         }
         if (Util.getNetworkConnectivityStatus(Subscription_edit.this)) {
             subscriptionEdit();
@@ -115,7 +123,7 @@ public class Subscription_edit extends BaseActivity {
                     String c_p_a="Rs "+changing_price+" / "+changing_amount+" lt";
                     EditVprice=(TextView)findViewById(R.id.edit_vprice);
                     EditVprice.setText(c_p_a);
-                    Prod_qnty=(TextView)findViewById(R.id.edit_qnty);
+                    Prod_qnty=(TextView)findViewById(R.id.qnty);
                     String f_q= changing_amount+" lt";
                     Prod_qnty.setText(f_q);
 
@@ -135,7 +143,7 @@ public class Subscription_edit extends BaseActivity {
                 String c_p_a="Rs "+changing_price+" / "+changing_amount+" lt";
                 EditVprice=(TextView)findViewById(R.id.edit_vprice);
                 EditVprice.setText(c_p_a);
-                Prod_qnty=(TextView)findViewById(R.id.edit_qnty);
+                Prod_qnty=(TextView)findViewById(R.id.qnty);
                 String f_q= changing_amount+" lt";
                 Prod_qnty.setText(f_q);
 
@@ -458,15 +466,15 @@ Toast.makeText(Subscription_edit.this,"Updated",Toast.LENGTH_LONG).show();
             EditVprice=(TextView)findViewById(R.id.edit_vprice);
             EditVprice.setText(c_p_a);
 
-            Prod_qnty=(TextView)findViewById(R.id.edit_qnty);
+            Prod_qnty=(TextView)findViewById(R.id.qnty);
             String f_q= changing_amount+" lt";
             Prod_qnty.setText(f_q);
 
             Prod_name=(TextView)findViewById(R.id.Mhead);
             Prod_name.setText(productname);
-            Start=(EditText) findViewById(R.id.s_edit_date);
+            Start=(EditText) findViewById(R.id.s_date);
             Start.setText(startdate);
-            End=(EditText) findViewById(R.id.e_edit_date);
+            End=(EditText) findViewById(R.id.e_date);
             End.setText(enddate);
             progress.dismiss();
 

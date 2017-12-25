@@ -221,12 +221,11 @@ public class ReportActivity extends AppCompatActivity {
                             String product_name = o_list_obj.getString("product_name");
                             String s_quantity = o_list_obj.getString("quentity");
                             String s_liter = o_list_obj.getString("weight_type");
-                            /*String appartment = o_list_obj.getString("plot_no");
-                            String photo = o_list_obj.getString("photo");*/
 
-                            ReportDetails list1 = new ReportDetails(id,subscription_id,amount,mobile_no,name,flat_no,address,block_name,
-                                    appartment_name,product_name,s_quantity,s_liter);
+                            ReportDetails list1 = new ReportDetails(id, subscription_id, amount, mobile_no, name, flat_no, address, block_name,
+                                    appartment_name, product_name, s_quantity, s_liter);
                             deliveryDetailsArrayList.add(list1);
+
                         }
                     }
 

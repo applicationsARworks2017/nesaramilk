@@ -197,6 +197,7 @@
                     android:paddingLeft="15dp"
                     android:paddingBottom="10dp"
                     android:paddingTop="10dp"
+                    android:visibility="gone"
                     android:paddingRight="15dp"
                     android:background="@drawable/edittext_border"/>
                 <LinearLayout
@@ -205,53 +206,71 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="15dp"
                     android:layout_gravity="center">
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:id="@+id/edit_min"
-                        android:background="@drawable/minus"/>
+                        android:id="@+id/min"
+                        android:gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_remove_white_24dp"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:background="@drawable/edittext_border"
                         android:textSize="15dp"
-                        android:id="@+id/edit_qnty"
+                        android:id="@+id/qnty"
                         android:paddingLeft="35dp"
                         android:paddingRight="35dp"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:text="2.0 lt"
+                        android:text="1.0 lt"
                         />
-                    <ImageView
+
+                    <LinearLayout
+                        android:id="@+id/plus"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:id="@+id/edit_plus"
-                        android:background="@drawable/plus"/>
+                        android:gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_add_white_24dp"/>
+                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_horizontal"
                     android:orientation="horizontal">
                     <EditText
                         android:layout_width="130dp"
                         android:layout_height="40dp"
                         android:hint="Start Date"
-                        android:id="@+id/s_edit_date"
+                        android:id="@+id/s_date"
                         android:background="@drawable/edittext_border"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
                         android:paddingBottom="5dp"
                         android:paddingTop="5dp"
                         android:editable="false"
+                        android:gravity="center"
                         android:layout_gravity="left"/>
                     <EditText
                         android:layout_width="130dp"
                         android:layout_height="40dp"
-                        android:id="@+id/e_edit_date"
+                        android:id="@+id/e_date"
                         android:layout_marginLeft="40dp"
                         android:hint="End Date"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:editable="false"
                         android:background="@drawable/edittext_border"
                         android:paddingLeft="20dp"

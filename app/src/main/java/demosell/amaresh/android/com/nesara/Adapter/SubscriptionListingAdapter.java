@@ -252,8 +252,11 @@ public class SubscriptionListingAdapter extends BaseAdapter {
             public void onClick(View v) {
                     int pos = (Integer) v.getTag();
                     String id = user_pos.getId();
+                    String product_name = user_pos.getProduct_name();
+
                     Intent intent = new Intent(context, Subscription_edit.class);
                     intent.putExtra("id", id);
+                    intent.putExtra("PRODUCTNAME", product_name);
                     context.startActivity(intent);
             }
         });

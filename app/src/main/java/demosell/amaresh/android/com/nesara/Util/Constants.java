@@ -5,7 +5,7 @@ package demosell.amaresh.android.com.nesara.Util;
  */
 
 public class Constants {
-    public static final String LIVE_URL = "http://nesaramilk.com";
+    public static final String LIVE_URL = "http://nesaramilk.in";
     //public static final String FOLDER = "/web/";
     public static final String FOLDER = "/nesaramilk/";
     public static final String USER_OTP = "setuser.php";

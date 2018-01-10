@@ -63,6 +63,18 @@
                 android:textAlignment="center"
                 android:id="@+id/con_alt_phone"
                 android:background="@drawable/edittext_border"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:editable="false"
+                android:text="Need Help"
+                android:textColor="@color/red"
+                android:textAlignment="center"
+                android:id="@+id/help"
+                android:background="@drawable/edittext_border"/>
 
             <Button
                 android:layout_width="match_parent"

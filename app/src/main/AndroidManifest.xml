@@ -115,6 +115,8 @@
             android:name="demosell.amaresh.android.com.nesara.Activity.Addapartmentdeatils"
             android:label="Enter Apartment Details"
             android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AddApartments" />
+        <activity
+            android:name="demosell.amaresh.android.com.nesara.Activity.FileView" />
         <activity android:name="demosell.amaresh.android.com.nesara.Activity.ReportActivity"
             android:label="Delivery Report"
             android:screenOrientation="portrait"

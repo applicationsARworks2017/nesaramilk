@@ -45,6 +45,7 @@ public class EnterPhone extends AppCompatActivity implements OTPListener {
     Button button;
     int id,otp;
     String v_otp;
+    TextView tv_help;
     LinearLayout lin1,lin2;
     EditText et_otp;
     TextView tv_resend;
@@ -69,6 +70,7 @@ public class EnterPhone extends AppCompatActivity implements OTPListener {
         button=(Button)findViewById(R.id.bt_sendotp);
         et_otp=(EditText)findViewById(R.id.et_otp);
         tv_resend=(TextView)findViewById(R.id.tv_resend);
+        tv_help=(TextView)findViewById(R.id.tv_help);
         lin1=(LinearLayout)findViewById(R.id.lin1);
         lin2=(LinearLayout)findViewById(R.id.lin2);
         lin1.setVisibility(View.VISIBLE);
@@ -77,6 +79,13 @@ public class EnterPhone extends AppCompatActivity implements OTPListener {
             @Override
             public void onClick(View view) {
                 sendOTP();
+            }
+        });
+        tv_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(EnterPhone.this,FileView.class);
+                startActivity(intent);
             }
         });
 

@@ -39,6 +39,7 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -83,7 +84,7 @@ public class Home extends AppCompatActivity {
     List<SubscriptionListing> subList;
     ListView lvSubscriptions;
     String userid,name,phone,altphone,email,appartment,flat,phase,city,server_message,sname,sappartment,sflat,sphase,scity;
-    EditText et_name,et_phone,et_altphone,et_email,et_appartment,et_flat,et_phase,et_city;
+    EditText et_name,et_phone,et_altphone,et_email,et_appartment,et_flat,et_phase,et_city,help;
     Button edit,done,logout,okay;
     FloatingActionButton fab;
     ImageView bagmoney;
@@ -201,9 +202,17 @@ public class Home extends AppCompatActivity {
         c_phone = (EditText) findViewById(R.id.con_phone);
         c_phone.setText("+91 8884144429");
         alt_phone = (EditText) findViewById(R.id.con_alt_phone);
+        help = (EditText) findViewById(R.id.help);
         alt_phone.setText("+91 8884144492");
         okay = (Button) findViewById(R.id.btok);
         okay.setText("OK");
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Home.this, FileView.class);
+                startActivity(intent);
+            }
+        });
 
         // subscribtionpage initializations
         lvSubscriptions=(ListView)findViewById(R.id.subscribtion_listView);

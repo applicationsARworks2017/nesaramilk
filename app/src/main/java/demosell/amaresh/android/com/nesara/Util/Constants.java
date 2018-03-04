@@ -6,6 +6,7 @@ package demosell.amaresh.android.com.nesara.Util;
 
 public class Constants {
     public static final String LIVE_URL = "http://nesaramilk.in";
+    public static final String PHOTO_URL = "http://nesaramilk.in/admin/files/photo/";
     //public static final String FOLDER = "/web/";
     public static final String FOLDER = "/nesaramilk/";
     public static final String USER_OTP = "setuser.php";
@@ -30,15 +31,18 @@ public class Constants {
     public static final String TRANSACTION_HISTORY= "transactionhistory.php";
     public static final String SEND_MESSAGE= "setnotification.php";
     public static final String GET_MESSAGE= "getnotification.php";
+    public static final String GET_PRODUCTS= "getprice.php";
     public static final String STOP_SUBSCRIBE= "stopsubscribe.php";
 
 
 
     public static final String SHAREDPREFERENCE_KEY = "nessara_milk";
+    public static final String SHAREDPREFERENCEFCM_KEY = "nessara_sharedpref";
     public static final String N_USER_ID = "user_id";
     public static final String N_USER_MOBILE = "user_mobile";
     public static final String N_USER_NAME = "user_name";
     public static final String N_USER_EMAIL = "user_email";
+    public static final String N_USER_APARTMENTID = "apartment_id";
     public static final String N_USER_LOCATION = "user_location";
     public static final String N_USER_LOCALITY = "user_locality";
     public static final String N_USER_HOUSE = "user_house";

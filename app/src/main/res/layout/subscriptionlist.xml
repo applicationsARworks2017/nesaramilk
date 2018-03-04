@@ -70,7 +70,7 @@
                     android:textStyle="bold"
                     android:id="@+id/s_date_value"
                     android:layout_marginLeft="10dp"
-                    />
+                    android:layout_toRightOf="@+id/s_date" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -88,7 +88,27 @@
                     android:text="Dec 30,2016"
                     android:textStyle="bold"
                     android:id="@+id/e_date_value"
-                    android:layout_marginLeft="10dp" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/e_date" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e_date_value"
+                    android:layout_marginTop="5dp"
+                    android:text="Total : "
+                    android:textColor="@color/black"
+                    android:id="@+id/e_total" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e_date"
+                    android:layout_toEndOf="@+id/e_date"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:id="@+id/e_total_value"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/e_date" />
 
 
 
@@ -105,7 +125,7 @@
                     android:id="@+id/subline"
                     android:background="@color/gray"
                     android:layout_marginTop="5dp"
-                    android:layout_below="@+id/e_date_value"></LinearLayout>
+                    android:layout_below="@+id/e_total_value"></LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_centerHorizontal="true"

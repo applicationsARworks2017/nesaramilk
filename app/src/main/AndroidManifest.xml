@@ -19,6 +19,7 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,7 +47,13 @@
         <activity android:name="demosell.amaresh.android.com.nesara.Activity.PayMentGateWayPayUbiz" />
         <activity
             android:name="demosell.amaresh.android.com.nesara.Activity.Home"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
         <activity
             android:name="demosell.amaresh.android.com.nesara.Activity.TransactionHistory"
             android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home"
@@ -115,16 +122,16 @@
             android:name="demosell.amaresh.android.com.nesara.Activity.Addapartmentdeatils"
             android:label="Enter Apartment Details"
             android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AddApartments" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.FileView" />
         <activity
-            android:name="demosell.amaresh.android.com.nesara.Activity.FileView" />
-        <activity android:name="demosell.amaresh.android.com.nesara.Activity.ReportActivity"
+            android:name="demosell.amaresh.android.com.nesara.Activity.ReportActivity"
             android:label="Delivery Report"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="demosell.amaresh.android.com.nesara.Activity.MessageDetilActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity"></activity>
-        <activity android:name="demosell.amaresh.android.com.nesara.Activity.MessageDetilActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"
-            ></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <!-- Firebase Notifications -->
         <service android:name="demosell.amaresh.android.com.nesara.Firebase.MyFirebaseMessagingService">
@@ -138,12 +145,24 @@
             </intent-filter>
         </service>
         <service
-            android:exported="false"
-            android:name="demosell.amaresh.android.com.nesara.Firebase.MyJobService">
+            android:name="demosell.amaresh.android.com.nesara.Firebase.MyJobService"
+            android:exported="false">
             <intent-filter>
-                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
             </intent-filter>
         </service>
+
+        <activity
+            android:name="demosell.amaresh.android.com.nesara.Activity.NewSubscription"
+            android:label="New Subcription"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.Home" />
+        <activity
+            android:name="demosell.amaresh.android.com.nesara.Activity.DaySubscribe"
+            android:label="Daywise Subcription"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.NewSubscription" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.DateSubcribe"
+            android:label="Datewise Subscribe"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.NewSubscription"></activity>
     </application>
 
 </manifest>

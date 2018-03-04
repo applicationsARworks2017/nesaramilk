@@ -41,8 +41,9 @@ public class DeliveryDetails extends AppCompatActivity {
     String name,apprtmnt,flat,phase,address,phnum,alt_ph,mailid;
     EditText Name,Flat,Phase,H_address,Phone_no,Alt_ph_no,Mail_id;
     int server_status;
-    String server_message;
+    String server_message,fcm_id;
     public static EditText Appartment;
+    public static String appartment_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,7 @@ public class DeliveryDetails extends AppCompatActivity {
          //   usertype = extras.getString("usertype");
             id = extras.getInt("id");
         }
+        fcm_id =DeliveryDetails.this.getSharedPreferences(Constants.SHAREDPREFERENCEFCM_KEY, 0).getString(Constants.FCM_ID, null);
 
         button=(Button)findViewById(R.id.submit);
         Name=(EditText)findViewById(R.id.name);
@@ -122,7 +124,7 @@ public class DeliveryDetails extends AppCompatActivity {
             String city="Bengaluru";
             String usertype="User";
 
-            asyncTask.execute(sid,name,mailid,city,apprtmnt,flat,ph_no,phase,alt_ph,address,usertype);
+            asyncTask.execute(sid,name,mailid,city,apprtmnt,flat,ph_no,phase,alt_ph,address,usertype,appartment_id);
         }else {
             Toast.makeText(this, "You are in Offline Mode", Toast.LENGTH_LONG).show();
         }
@@ -161,6 +163,7 @@ public class DeliveryDetails extends AppCompatActivity {
                 String _user_alt_ph = params[8];
                 String _useraddress = params[9];
                 String _usertype = params[10];
+                String _apartment = params[11];
 
                 InputStream in = null;
                 int resCode = -1;
@@ -200,7 +203,9 @@ alternet_no:
                         .appendQueryParameter("block_name", _userphase)
                         .appendQueryParameter("address", _useraddress)
                         .appendQueryParameter("city", _usercity)
-                        .appendQueryParameter("user_type", EnterPhone.usertype);
+                        .appendQueryParameter("user_type", EnterPhone.usertype)
+                        .appendQueryParameter("apartment_id", appartment_id)
+                        .appendQueryParameter("fcm_id", fcm_id);
 
                 //.appendQueryParameter("deviceid", deviceid);
                 String query = builder.build().getEncodedQuery();

@@ -64,7 +64,7 @@ public class EnterPhone extends AppCompatActivity implements OTPListener {
                 PERMISSION_ACCESS_MESSAGE);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE},
                 PERMISSION_ACCESS_CALL);
-        fcm_id =EnterPhone.this.getSharedPreferences(Constants.SHAREDPREFERENCE_KEY, 0).getString(Constants.FCM_ID, null);
+        fcm_id =EnterPhone.this.getSharedPreferences(Constants.SHAREDPREFERENCEFCM_KEY, 0).getString(Constants.FCM_ID, null);
 
         phone=(EditText)findViewById(R.id.et_phone);
         button=(Button)findViewById(R.id.bt_sendotp);

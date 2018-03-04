@@ -259,10 +259,13 @@ public class OneFragment extends Fragment {
                             String s_start_date = q_list_obj.getString("start_date");
                             String s_end_date = q_list_obj.getString("end_date");
                             String s_price_id = q_list_obj.getString("price_id");
+                            String total_day = q_list_obj.getString("total_day");
+                            String total_price = q_list_obj.getString("total_price");
                             String is_stop = q_list_obj.getString("is_stop");
 
+
                             SubscriptionListing s_list = new SubscriptionListing(s_id, s_user_id, s_product_name, s_quantity,
-                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop,s_liter);
+                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop,s_liter,total_day,total_price);
                             subList.add(s_list);
 
                         }

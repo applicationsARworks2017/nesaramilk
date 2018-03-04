@@ -80,6 +80,8 @@ public class AddApartments extends AppCompatActivity {
                 if(Page.contains("user")){
                     Apartments ap_details= (Apartments) adapterView.getItemAtPosition(i);
                     DeliveryDetails.Appartment.setText(ap_details.getApartment_name());
+                    DeliveryDetails.appartment_id=ap_details.getId();
+                    DeliveryDetails.Appartment.setText(ap_details.getApartment_name());
                     AddApartments.this.finish();
                 }
 

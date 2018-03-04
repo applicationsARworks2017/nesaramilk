@@ -64,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
+            android:visibility="gone"
             android:layout_alignParentRight="true">
             <include layout="@layout/notification_layout"/>
         </RelativeLayout>

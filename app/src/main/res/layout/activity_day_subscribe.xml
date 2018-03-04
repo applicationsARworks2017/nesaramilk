@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demosell.amaresh.android.com.nesara.Activity.DaySubscribe">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <demosell.amaresh.android.com.nesara.Calander.CalendarCustomView
+                android:id="@+id/custom_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginBottom="0dp">
+
+            </demosell.amaresh.android.com.nesara.Calander.CalendarCustomView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Note : The quanity you will choose, that will be remain same for all selected dates."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APARTMENT NAME"
+            android:id="@+id/apartment"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:id="@+id/product"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:layout_marginTop="10dp"
+            android:id="@+id/product_price"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/min"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_remove_white_24dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/edittext_border"
+                android:textSize="15dp"
+                android:id="@+id/qnty"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="1.0 lt"
+                />
+
+            <LinearLayout
+                android:id="@+id/plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_add_white_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/submit"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="30dp"
+                android:text="submit"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

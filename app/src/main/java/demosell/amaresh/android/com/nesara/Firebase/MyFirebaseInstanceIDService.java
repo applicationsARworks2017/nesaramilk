@@ -41,7 +41,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     }
 
     private void storeRegIdInPref(String token) {
-        SharedPreferences sharedPreferences = MyFirebaseInstanceIDService.this.getSharedPreferences(Constants.SHAREDPREFERENCE_KEY, 0); // 0 - for private mode
+        SharedPreferences sharedPreferences = MyFirebaseInstanceIDService.this.getSharedPreferences(Constants.SHAREDPREFERENCEFCM_KEY, 0); // 0 - for private mode
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(Constants.FCM_ID, token);
         editor.commit();

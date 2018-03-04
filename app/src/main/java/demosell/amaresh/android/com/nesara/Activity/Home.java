@@ -21,8 +21,10 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -55,9 +57,11 @@ import java.util.Collections;
 import java.util.List;
 
 import demosell.amaresh.android.com.nesara.Adapter.MessagelistAdapter;
+import demosell.amaresh.android.com.nesara.Adapter.ProdudtAdapter;
 import demosell.amaresh.android.com.nesara.Adapter.SubscriptionListingAdapter;
 import demosell.amaresh.android.com.nesara.Adapter.TransactioListingAdapter;
 import demosell.amaresh.android.com.nesara.Pojo.Messagelist;
+import demosell.amaresh.android.com.nesara.Pojo.Products;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
 import demosell.amaresh.android.com.nesara.Pojo.TransactionHistoryList;
 import demosell.amaresh.android.com.nesara.Util.CheckInternet;
@@ -70,9 +74,9 @@ public class Home extends AppCompatActivity {
     RelativeLayout homelayout,subscriptionLayout,settingslayout,contactlayout,activity_wallet,activity_message;
     int id,server_status;
     int user_id;
-    LinearLayout organicmilk;
-    LinearLayout a2;
     int product_id;
+    GridView product_grid;
+    SwipeRefreshLayout swipe_home;
     TextView tvNoRecordFoundText;
     RelativeLayout main_relative;
     TextView wallet_point,pagehead,c_email,c_phone, alt_phone,tvEdit;
@@ -83,7 +87,7 @@ public class Home extends AppCompatActivity {
     String s_id,s_user_id,s_product_name,s_quantity,s_delivery_type,s_start_date,s_end_date,s_price_id,s_liter;
     List<SubscriptionListing> subList;
     ListView lvSubscriptions;
-    String userid,name,phone,altphone,email,appartment,flat,phase,city,server_message,sname,sappartment,sflat,sphase,scity;
+    String userid,name,phone,altphone,email,appartment,flat,phase,city,server_message,sname,sappartment,sflat,sphase,scity,apartment_id;
     EditText et_name,et_phone,et_altphone,et_email,et_appartment,et_flat,et_phase,et_city,help;
     Button edit,done,logout,okay;
     FloatingActionButton fab;
@@ -97,10 +101,12 @@ public class Home extends AppCompatActivity {
     ListView lv,lvmessage;
     List<TransactionHistoryList> trans_list;
     List<Messagelist> message_list;
+    ArrayList<Products> prouct_list;
     TransactioListingAdapter transadapter;
+    ProdudtAdapter pAdapter;
     MessagelistAdapter adapter;
-    String Message_id;
-
+    String Message_id,location_id;
+    public static String price_id,product_name,product_price,product_minqnty,product_wei,appartment_name;
 
 
     @Override
@@ -110,13 +116,18 @@ public class Home extends AppCompatActivity {
 
         main_relative = (RelativeLayout) findViewById(R.id.main_relative);
         rel_notification = (RelativeLayout) findViewById(R.id.rel_notification);
-        organicmilk = (LinearLayout) findViewById(R.id.organicmilk);
-        a2 = (LinearLayout) findViewById(R.id.a2);
+
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         homelayout = (RelativeLayout) findViewById(R.id.home_layout);
         subscriptionLayout=(RelativeLayout)findViewById(R.id.activity_my_subscription);
         contactlayout=(RelativeLayout)findViewById(R.id.activity_contact);
         tvNoRecordFoundText=(TextView)findViewById(R.id.tvNoRecordFoundText);
+        // for home tab
+
+        swipe_home=(SwipeRefreshLayout)findViewById(R.id.swipe_home);
+        product_grid=(GridView)findViewById(R.id.product_grid);
+
+
         // for wallet tab
         activity_wallet=(RelativeLayout)findViewById(R.id.activity_wallet);
         activity_message=(RelativeLayout)findViewById(R.id.activity_my_message);
@@ -226,8 +237,12 @@ public class Home extends AppCompatActivity {
             id = getSharedPreferences(Constants.SHAREDPREFERENCE_KEY, 0).getInt(Constants.N_USER_ID, 0);
 
         }
+        location_id = getSharedPreferences(Constants.SHAREDPREFERENCE_KEY, 0).getString(Constants.N_USER_APARTMENTID, null);
+
+
         getUserDetails();
         getWDetails();
+        getProducts();
 
 
        bagmoney.setOnClickListener(new View.OnClickListener() {
@@ -428,35 +443,43 @@ public class Home extends AppCompatActivity {
         * NOTIFICATION WORK END
         * */
 
-        /*
-        * HOME PAGE WORK
+               /*
+        * HOMEPAGE WORK START
         * */
 
-        organicmilk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                product_id=1;
+           product_grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+               @Override
+               public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                   Products products=(Products) product_grid.getItemAtPosition(position);
+                   price_id=products.getId();
+                   product_name=products.getProduct_name();
+                   product_price=products.getPrice();
+                   product_minqnty=products.getMin_quantity();
+                   product_wei=products.getWeight_type();
+                   appartment_name=products.getAppartment_name();
 
-                    // Toast.makeText(Home.this,cash_type+" selected",Toast.LENGTH_LONG).show();
-                    Intent i=new Intent(Home.this,AddSubscription.class);
-                    i.putExtra("p_id",product_id);
-                    i.putExtra("price_id","4");
-                    startActivity(i);
-                }
+                   Intent intent=new Intent(Home.this,NewSubscription.class);
+                   //intent.putExtra("UNIT_ID",unityDetailsLocation.getLocation_id());
+                   //intent.putExtra("UNIT_NAME",unityDetailsLocation.getLocation_name());
+                   startActivity(intent);
+               }
+           });
+           swipe_home.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+               @Override
+               public void onRefresh() {
+                   getProducts();
+               }
+           });
 
-        });
+    }
 
-        a2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                product_id=2;
-                    Intent i=new Intent(Home.this,AddSubscription.class);
-                    i.putExtra("p_id",product_id);
-                    i.putExtra("price_id","5");
-                startActivity(i);
-                }
-        });
-
+    private void getProducts() {
+        if (Util.getNetworkConnectivityStatus(this)) {
+            getProductsAsyntask asyncTask = new getProductsAsyntask();
+            asyncTask.execute(location_id);
+        }else {
+            Toast.makeText(this, "You are in Offline Mode", Toast.LENGTH_LONG).show();
+        }
     }
 
     private void messageList() {
@@ -652,6 +675,7 @@ public class Home extends AppCompatActivity {
                             user_otp=userObj.optString("otp");
                             user_created=userObj.optString("created");
                             user_type=userObj.optString("user_type");
+                            apartment_id=userObj.optString("apartment_id");
 
                         }
 
@@ -702,6 +726,7 @@ public class Home extends AppCompatActivity {
             editor.putString(Constants.N_USER_EMAIL,user_email);
             editor.putString(Constants.N_USER_NAME,user_name);
             editor.putString(Constants.N_USER_LOCATION,user_location);
+            editor.putString(Constants.N_USER_APARTMENTID,apartment_id);
             editor.putString(Constants.N_USER_LOCALITY,user_locality);
             editor.putString(Constants.N_USER_HOUSE,user_house);
             editor.putString(Constants.N_USER_ADDRESS,user_address);
@@ -987,15 +1012,17 @@ public class Home extends AppCompatActivity {
                             s_product_name = q_list_obj.getString("prosuct_name");
                             s_quantity = q_list_obj.getString("quentity");
                             s_liter = q_list_obj.getString("weight_type");
-                            s_delivery_type = q_list_obj.getString("delivery_type");
+                            s_delivery_type = q_list_obj.getString("subscription_type");
                             s_start_date = q_list_obj.getString("start_date");
                             s_end_date = q_list_obj.getString("end_date");
                             s_price_id = q_list_obj.getString("price_id");
+                            String total_day = q_list_obj.getString("total_day");
+                            String total_price = q_list_obj.getString("total_price");
                             String is_stop = q_list_obj.getString("is_stop");
 
 
                             SubscriptionListing s_list = new SubscriptionListing(s_id, s_user_id, s_product_name, s_quantity,
-                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop,s_liter);
+                                    s_delivery_type, s_start_date, s_end_date, s_price_id,is_stop,s_liter,total_day,total_price);
                             subList.add(s_list);
 
                         }
@@ -1660,4 +1687,155 @@ alternet_no:
 
         }
     }
+
+    /*
+    *
+    * GET PRODUCTS ASYNTASK
+    * */
+
+    private class getProductsAsyntask extends AsyncTask<String, Void, Void> {
+
+        private static final String TAG = "Product Details";
+        ProgressDialog progress;
+        int product_status;
+        String product_message;
+
+        @Override
+        protected void onPreExecute() {
+            progress = ProgressDialog.show(Home.this, "Please Wait",
+                    "Loading Product List...", true);
+
+        }
+
+
+        @Override
+        protected Void doInBackground(String... params) {
+
+
+            try {
+                String _loc_id = params[0];
+                InputStream in = null;
+                int resCode = -1;
+                String link = Constants.LIVE_URL+Constants.FOLDER+Constants.GET_PRODUCTS;
+                URL url = new URL(link);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setReadTimeout(10000);
+                conn.setConnectTimeout(15000);
+                conn.setRequestMethod("POST");
+                conn.setDoInput(true);
+                conn.setDoOutput(true);
+                conn.setAllowUserInteraction(false);
+                conn.setInstanceFollowRedirects(true);
+                conn.setRequestMethod("POST");
+
+                Uri.Builder builder = new Uri.Builder()
+                        .appendQueryParameter("apartment_id", _loc_id);
+
+                String query = builder.build().getEncodedQuery();
+
+                OutputStream os = conn.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(
+                        new OutputStreamWriter(os, "UTF-8"));
+                writer.write(query);
+                writer.flush();
+                writer.close();
+                os.close();
+
+                conn.connect();
+                resCode = conn.getResponseCode();
+                if (resCode == HttpURLConnection.HTTP_OK) {
+                    in = conn.getInputStream();
+                }
+                if (in == null) {
+                    return null;
+                }
+                BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+                String response = "", data = "";
+
+                while ((data = reader.readLine()) != null) {
+                    response += data + "\n";
+                }
+
+                Log.i(TAG, "Response : " + response);
+
+/*
+                *//**//*
+                *
+                * "price": [
+        {
+            "id": "1",
+            "product_id": "1",
+            "apartment_id": "1",
+            "min_quantity": "1.00",
+            "payment_type": "Prepaid",
+            "price": "10.00",
+            "appartment_name": "Prestige Shantiniketan",
+            "image": null,
+            "information": null,
+            "product_name": "Regular Milk",
+            "status": "Active",
+            "weight_type": "Ltr",
+            "created": "01-01-1970 12:00 AM"
+        },
+                "status": 1,
+                "message": "Records Found"
+            }                                    *
+                * *//**//**/
+                if (response != null && response.length() > 0) {
+
+                    JSONObject res = new JSONObject(response);
+                    product_status=res.getInt("status");
+                    if(product_status==1){
+                        JSONArray user_list = res.getJSONArray("price");
+                        prouct_list = new ArrayList();
+                        for (int i = 0; i < user_list.length(); i++) {
+
+                            JSONObject q_list_obj = user_list.getJSONObject(i);
+
+                            String id = q_list_obj.getString("id");
+                            String product_id = q_list_obj.getString("product_id");
+                            String min_quantity = q_list_obj.getString("min_quantity");
+                            String price = q_list_obj.getString("price");
+                            String appartment_name = q_list_obj.getString("appartment_name");
+                            String image = q_list_obj.getString("image");
+                            String product_name = q_list_obj.getString("product_name");
+                            String weight_type = q_list_obj.getString("weight_type");
+
+                            Products p_list = new Products(id,product_id,min_quantity,price,appartment_name,image,product_name,weight_type);
+                            prouct_list.add(p_list);
+                        }
+                    }
+                    else{    // db.addAnsweredQuestionList(new AnswerDetails(qid,uid,q_title,qdesc,q_admin_desc,q_isanswer,q_ispublish,q_fullname,q_postdate,q_created));
+                        product_message="No Products Found";
+                    }
+
+                }
+
+                return null;
+
+
+            } catch (Exception exception) {
+                Log.e(TAG, "LoginAsync : doInBackground", exception);
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void user) {
+            super.onPostExecute(user);
+            progress.dismiss();
+            if(product_status==1) {
+                swipe_home.setVisibility(View.VISIBLE);
+                pAdapter = new ProdudtAdapter(Home.this, prouct_list);
+                product_grid.setAdapter(pAdapter);
+            }
+            else{
+                swipe_home.setVisibility(View.GONE);
+                Toast.makeText(Home.this,product_message,Toast.LENGTH_SHORT).show();
+            }
+
+        }
+    }
+
 }

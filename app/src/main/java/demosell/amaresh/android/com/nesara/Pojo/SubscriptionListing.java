@@ -5,11 +5,27 @@ package demosell.amaresh.android.com.nesara.Pojo;
  */
 
 public class SubscriptionListing {
-    String id,s_user_id,product_name,quantity,delivery_type,start_date,end_date,price_id,is_stop,s_liter;
+    String id,s_user_id,product_name,quantity,delivery_type,start_date,end_date,price_id,is_stop,s_liter,total_day,total_price;
 
+
+    public String getTotal_day() {
+        return total_day;
+    }
+
+    public void setTotal_day(String total_day) {
+        this.total_day = total_day;
+    }
+
+    public String getTotal_price() {
+        return total_price;
+    }
+
+    public void setTotal_price(String total_price) {
+        this.total_price = total_price;
+    }
 
     public SubscriptionListing(String id, String s_user_id, String product_name, String quantity, String delivery_type,
-                               String start_date, String end_date, String price_id, String is_stop,String s_liter) {
+                               String start_date, String end_date, String price_id, String is_stop, String s_liter, String total_day, String total_price) {
 
         this.id=id;
         this.s_user_id=s_user_id;
@@ -21,6 +37,9 @@ public class SubscriptionListing {
         this.price_id=price_id;
         this.is_stop=is_stop;
         this.s_liter=s_liter;
+        this.total_day=total_day;
+        this.total_price=total_price;
+
 
     }
 

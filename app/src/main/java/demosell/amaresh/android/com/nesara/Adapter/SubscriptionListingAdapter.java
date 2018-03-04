@@ -88,7 +88,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         private TextView Product_type;
         private TextView Delivery_type;
         private TextView Start_date;
-        private TextView End_date;
+        private TextView End_date,e_total_value;
         private LinearLayout layoutoption;
         private ImageView Im_edit,iv_resume,iv_pause,iv_stop;
 
@@ -113,6 +113,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
             holder.Product_type = (TextView) convertView.findViewById(R.id.p_type);
             holder.Delivery_type = (TextView) convertView.findViewById(R.id.d_type);
             holder.Start_date = (TextView) convertView.findViewById(R.id.s_date_value);
+            holder.e_total_value = (TextView) convertView.findViewById(R.id.e_total_value);
             holder.End_date = (TextView) convertView.findViewById(R.id.e_date_value);
             holder.iv_pause = (ImageView) convertView.findViewById(R.id.iv_pause);
             holder.iv_resume = (ImageView) convertView.findViewById(R.id.iv_resume);
@@ -130,6 +131,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         holder.iv_resume.setTag(position);
         holder.iv_stop.setTag(position);
         holder.Im_edit.setTag(position);
+        holder.e_total_value.setTag(position);
 
 
         String ltr_qunty=user_pos.getQuantity()+" "+user_pos.getS_liter();
@@ -137,6 +139,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         holder.Delivery_type.setText(user_pos.getDelivery_type());
         holder.Start_date.setText(user_pos.getStart_date());
         holder.End_date.setText(user_pos.getEnd_date());
+        holder.e_total_value.setText(user_pos.getTotal_day()+" Days, Rs. "+user_pos.getTotal_price());
         // check whether edit is possible or not
         String s_date = user_pos.getStart_date();
         String e_date = user_pos.getEnd_date();
@@ -230,20 +233,20 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         holder.iv_pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context,CalenderView.class);
+               /* Intent intent=new Intent(context,CalenderView.class);
                 intent.putExtra("STARTDATE",user_pos.getStart_date());
                 intent.putExtra("ENDDATE",user_pos.getEnd_date());
                 intent.putExtra("SUB_ID",user_pos.getId());
-                context.startActivity(intent);
+                context.startActivity(intent);*/
             }
         });
 
         holder.iv_resume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context,Resumecalender.class);
+                /*Intent intent=new Intent(context,Resumecalender.class);
                 intent.putExtra("SUB_ID",user_pos.getId());
-                context.startActivity(intent);
+                context.startActivity(intent);*/
             }
         });
 
@@ -254,10 +257,10 @@ public class SubscriptionListingAdapter extends BaseAdapter {
                     String id = user_pos.getId();
                     String product_name = user_pos.getProduct_name();
 
-                    Intent intent = new Intent(context, Subscription_edit.class);
+                   /* Intent intent = new Intent(context, Subscription_edit.class);
                     intent.putExtra("id", id);
                     intent.putExtra("PRODUCTNAME", product_name);
-                    context.startActivity(intent);
+                    context.startActivity(intent);*/
             }
         });
 

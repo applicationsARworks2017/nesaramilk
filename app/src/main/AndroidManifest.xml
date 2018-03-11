@@ -19,7 +19,6 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,11 +47,14 @@
         <activity
             android:name="demosell.amaresh.android.com.nesara.Activity.Home"
             android:theme="@style/AppTheme.NoActionBar">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity
             android:name="demosell.amaresh.android.com.nesara.Activity.TransactionHistory"
@@ -160,9 +162,11 @@
             android:name="demosell.amaresh.android.com.nesara.Activity.DaySubscribe"
             android:label="Daywise Subcription"
             android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.NewSubscription" />
-        <activity android:name="demosell.amaresh.android.com.nesara.Activity.DateSubcribe"
+        <activity
+            android:name="demosell.amaresh.android.com.nesara.Activity.DateSubcribe"
             android:label="Datewise Subscribe"
-            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.NewSubscription"></activity>
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.NewSubscription" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.PausePlayActivity"></activity>
     </application>
 
 </manifest>

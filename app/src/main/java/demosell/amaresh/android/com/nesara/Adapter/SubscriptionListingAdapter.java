@@ -43,6 +43,7 @@ import java.util.List;
 
 import demosell.amaresh.android.com.nesara.Activity.CalenderView;
 import demosell.amaresh.android.com.nesara.Activity.Home;
+import demosell.amaresh.android.com.nesara.Activity.PausePlayActivity;
 import demosell.amaresh.android.com.nesara.Activity.Resumecalender;
 import demosell.amaresh.android.com.nesara.Activity.Subscription_edit;
 import demosell.amaresh.android.com.nesara.Pojo.SubscriptionListing;
@@ -154,7 +155,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
             e.printStackTrace();
         }
 
-        if (System.currentTimeMillis() >= strDate.getTime()) {
+        if (System.currentTimeMillis() >= endDate.getTime()) {
             holder.Im_edit.setEnabled(false);
             Resources res = context.getResources();
             Drawable drawable = res.getDrawable(R.mipmap.ic_mode_edit_black_24dp);
@@ -233,11 +234,11 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         holder.iv_pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent intent=new Intent(context,CalenderView.class);
-                intent.putExtra("STARTDATE",user_pos.getStart_date());
-                intent.putExtra("ENDDATE",user_pos.getEnd_date());
+                Intent intent=new Intent(context,PausePlayActivity.class);
+                //intent.putExtra("STARTDATE",user_pos.getgStart_date());
+                //intent.putExtra("ENDDATE",user_pos.getEnd_date());
                 intent.putExtra("SUB_ID",user_pos.getId());
-                context.startActivity(intent);*/
+                context.startActivity(intent);
             }
         });
 

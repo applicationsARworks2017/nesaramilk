@@ -242,10 +242,12 @@ public class Home extends AppCompatActivity {
 
         getUserDetails();
         getWDetails();
-        getProducts();
+// here we can't call because we are getting location id after userdetails
+//        getProducts();
 
 
-       bagmoney.setOnClickListener(new View.OnClickListener() {
+
+        bagmoney.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
                Intent i=new Intent(Home.this,TransactionHistory.class);
@@ -734,6 +736,9 @@ public class Home extends AppCompatActivity {
             editor.putString(Constants.N_USER_CREATED,user_created);
             editor.putString(Constants.N_USER_TYPE,user_type);
             editor.commit();
+
+            getProducts();
+
 
             //   Toast.makeText(Home.this, "Logged In", Toast.LENGTH_LONG).show();
           /*   Intent i = new Intent(getContext(), Home.class);

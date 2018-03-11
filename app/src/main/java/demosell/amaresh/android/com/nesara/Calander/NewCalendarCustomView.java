@@ -57,10 +57,10 @@ public class NewCalendarCustomView extends LinearLayout {
     private Context context;
     private PPGridAdapter mAdapter;
     List<DetailsPP> mEvents;
-    String subscription_id;
-    public void setvalues(String values) {
-        this.subscription_id = values;
-    }
+    public static String subscription_id;
+    /*public void setvalues(String values) {
+        subscription_id = values;
+    }*/
 
     public NewCalendarCustomView(Context context) {
         super(context);
@@ -182,7 +182,7 @@ public class NewCalendarCustomView extends LinearLayout {
 
             try {
 
-                String _sub_id = params[0];
+                String _sub_id = subscription_id;
                 InputStream in = null;
                 int resCode = -1;
 
@@ -260,6 +260,10 @@ public class NewCalendarCustomView extends LinearLayout {
                     Date date1=null;
                     if (server_status == 1) {
                         JSONArray user_list = res.getJSONArray("subscription_details");
+                        JSONObject p_obj=res.getJSONObject("price");
+                        String min_qnty=p_obj.getString("min_quantity");
+                        String price=p_obj.getString("price");
+                        DetailsPP detailsP=new DetailsPP(min_qnty,price);
 
                         for (int i = 0; i < user_list.length(); i++) {
                             JSONObject q_list_obj = user_list.getJSONObject(i);
@@ -272,10 +276,8 @@ public class NewCalendarCustomView extends LinearLayout {
 
                             date1=new SimpleDateFormat("dd-MM-yyyy").parse(deliverydate);
 
-                             DetailsPP detailsPP=new DetailsPP(id,date1,subscription_id,quentity,is_delivered,is_paused);
+                            DetailsPP detailsPP=new DetailsPP(id,date1,subscription_id,quentity,is_delivered,is_paused);
                             mEvents.add(detailsPP);
-
-
                         }
 
                         server_message = "Sucessful";

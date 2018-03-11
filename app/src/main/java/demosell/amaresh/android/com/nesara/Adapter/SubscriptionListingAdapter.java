@@ -175,7 +175,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         if (System.currentTimeMillis() >= endDate.getTime()) {
             holder.iv_pause.setEnabled(false);
             Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_pause_black_24dp);
+            Drawable drawable = res.getDrawable(R.drawable.setting);
             drawable = DrawableCompat.wrap(drawable);
             DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.light_gray));
             holder.iv_pause.setImageDrawable(drawable);
@@ -183,7 +183,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         else{
             holder.iv_pause.setEnabled(true);
             Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_pause_black_24dp);
+            Drawable drawable = res.getDrawable(R.drawable.setting);
             drawable = DrawableCompat.wrap(drawable);
             DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.black));
             holder.iv_pause.setImageDrawable(drawable);
@@ -227,7 +227,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
             Resources res = context.getResources();
             Drawable drawable = res.getDrawable(R.mipmap.ic_stop_black_24dp);
             drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.black));
+            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.red));
             holder.iv_stop.setImageDrawable(drawable);
 
         }

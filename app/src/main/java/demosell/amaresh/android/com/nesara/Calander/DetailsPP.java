@@ -7,8 +7,34 @@ import java.util.Date;
  */
 
 class DetailsPP {
-    String id,subscription_id,quentity,is_delivered,is_paused;
+    String id,subscription_id,quentity,is_delivered,is_paused,min_qnty,price ;
     Date deliverydate;
+
+    public DetailsPP() {
+
+    }
+
+    public String getMin_qnty() {
+        return min_qnty;
+    }
+
+    public void setMin_qnty(String min_qnty) {
+        this.min_qnty = min_qnty;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public DetailsPP(String min_qnty, String price) {
+        this.min_qnty=min_qnty;
+        this.price=price;
+
+    }
 
     public String getId() {
         return id;

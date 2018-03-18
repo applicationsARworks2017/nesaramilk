@@ -5,11 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="demosell.amaresh.android.com.nesara.Activity.PausePlayActivity">
-
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tool_pp">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:id="@+id/back"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_arrow_back_white_24dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alter Dates"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </android.support.v7.widget.Toolbar>
     <demosell.amaresh.android.com.nesara.Calander.NewCalendarCustomView
         android:id="@+id/new_custom_calendar"
         android:layout_width="match_parent"
         android:layout_height="450dp"
+        android:layout_below="@id/tool_pp"
         android:layout_marginBottom="0dp">
 
     </demosell.amaresh.android.com.nesara.Calander.NewCalendarCustomView>

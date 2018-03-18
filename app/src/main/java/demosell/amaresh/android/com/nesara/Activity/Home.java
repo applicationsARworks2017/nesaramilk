@@ -1054,7 +1054,7 @@ public class Home extends AppCompatActivity {
         protected void onPostExecute(Void user) {
             super.onPostExecute(user);
             if(server_status==1) {
-                Collections.reverse(subList);
+               // Collections.reverse(subList);
                 qadapter = new SubscriptionListingAdapter(Home.this, subList);
                 lvSubscriptions.setAdapter(qadapter);
             }

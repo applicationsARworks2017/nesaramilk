@@ -50,7 +50,7 @@
                     android:textStyle="bold"
                     android:text="Organic Milk,2.5 lt"
                     android:layout_marginLeft="10dp"
-                   />
+                    android:layout_toRightOf="@+id/d_head" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

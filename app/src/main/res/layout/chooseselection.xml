@@ -23,7 +23,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/date_details"
-            android:background="@drawable/custombuttonselected"
+            android:background="@drawable/customedittext"
             android:gravity="center">
             <TextView
                 android:layout_width="wrap_content"

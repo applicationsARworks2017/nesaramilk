@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nesara.amaresh.demosell.R;
 
@@ -57,12 +58,11 @@ public class SubscriptionListingAdapter extends BaseAdapter {
     Context context;
     ProgressDialog progress;
     List<SubscriptionListing> subscription_lis;
-    Holder holder;
+    Holder holder,holder1;
     String id;
     String server_message;
     int server_status;
     Date st_date,end_Date;
-    private RelativeLayout activity_my_subscription;
 
 
     public SubscriptionListingAdapter(Home mySubscription, List<SubscriptionListing> subList) {
@@ -89,7 +89,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         private TextView Product_type;
         private TextView Delivery_type;
         private TextView Start_date;
-        private TextView End_date,e_total_value;
+        private TextView End_date,e_total_value,e_date,d_head;
         private LinearLayout layoutoption;
         private ImageView Im_edit,iv_resume,iv_pause,iv_stop;
 
@@ -110,12 +110,13 @@ public class SubscriptionListingAdapter extends BaseAdapter {
                     .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
             convertView = mInflater.inflate(R.layout.subscriptionlist, parent, false);
 
-            activity_my_subscription = (RelativeLayout) convertView.findViewById(R.id.activity_my_subscription);
             holder.Product_type = (TextView) convertView.findViewById(R.id.p_type);
             holder.Delivery_type = (TextView) convertView.findViewById(R.id.d_type);
             holder.Start_date = (TextView) convertView.findViewById(R.id.s_date_value);
             holder.e_total_value = (TextView) convertView.findViewById(R.id.e_total_value);
             holder.End_date = (TextView) convertView.findViewById(R.id.e_date_value);
+            holder.d_head = (TextView) convertView.findViewById(R.id.d_head);
+            holder.e_date = (TextView) convertView.findViewById(R.id.e_date);
             holder.iv_pause = (ImageView) convertView.findViewById(R.id.iv_pause);
             holder.iv_resume = (ImageView) convertView.findViewById(R.id.iv_resume);
             holder.Im_edit = (ImageView) convertView.findViewById(R.id.iv_edit);
@@ -130,16 +131,18 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         holder.End_date.setTag(position);
         holder.iv_pause.setTag(position);
         holder.iv_resume.setTag(position);
-        holder.iv_stop.setTag(position);
+        holder.iv_stop.setTag(holder);
         holder.Im_edit.setTag(position);
         holder.e_total_value.setTag(position);
+        holder.d_head.setTag(position);
+        holder.e_date.setTag(position);
 
 
         String ltr_qunty=user_pos.getQuantity()+" "+user_pos.getS_liter();
         holder.Product_type.setText(user_pos.getProduct_name()+" "+","+" "+ltr_qunty);
         holder.Delivery_type.setText(user_pos.getDelivery_type());
-        holder.Start_date.setText(user_pos.getStart_date());
-        holder.End_date.setText(user_pos.getEnd_date());
+       /* holder.Start_date.setText(user_pos.getStart_date());
+        holder.End_date.setText(user_pos.getEnd_date());*/
         holder.e_total_value.setText(user_pos.getTotal_day()+" Days, Rs. "+user_pos.getTotal_price());
         // check whether edit is possible or not
         String s_date = user_pos.getStart_date();
@@ -148,6 +151,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         Date strDate = null;
         Date endDate = null;
         // long date =System.currentTimeMillis();
+
         try {
             strDate = sdf.parse(s_date);
             endDate = sdf.parse(e_date);
@@ -155,66 +159,15 @@ public class SubscriptionListingAdapter extends BaseAdapter {
             e.printStackTrace();
         }
 
-        if (System.currentTimeMillis() >= endDate.getTime()) {
-            holder.Im_edit.setEnabled(false);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_mode_edit_black_24dp);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.light_gray));
-            holder.Im_edit.setImageDrawable(drawable);
+        if(user_pos.getDelivery_type().contentEquals("Daywise")){
+            holder.Start_date.setText("Dates");
+            holder.End_date.setText("Dates");
         }
         else{
-            holder.Im_edit.setEnabled(true);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_mode_edit_black_24dp);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.black));
-            holder.Im_edit.setImageDrawable(drawable);
+            holder.Start_date.setText(user_pos.getStart_date());
+            holder.End_date.setText(user_pos.getEnd_date());
         }
-
-        if (System.currentTimeMillis() >= endDate.getTime()) {
-            holder.iv_pause.setEnabled(false);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.drawable.setting);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.light_gray));
-            holder.iv_pause.setImageDrawable(drawable);
-        }
-        else{
-            holder.iv_pause.setEnabled(true);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.drawable.setting);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.black));
-            holder.iv_pause.setImageDrawable(drawable);
-
-        }
-        if (System.currentTimeMillis() >= endDate.getTime()) {
-            holder.iv_resume.setEnabled(false);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_play_arrow_black_24dp);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.light_gray));
-            holder.iv_resume.setImageDrawable(drawable);
-        }
-        else{
-            holder.iv_resume.setEnabled(true);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_play_arrow_black_24dp);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.black));
-            holder.iv_resume.setImageDrawable(drawable);
-
-        }
-        if (System.currentTimeMillis() >= endDate.getTime()) {
-            holder.iv_stop.setEnabled(false);
-            Resources res = context.getResources();
-            Drawable drawable = res.getDrawable(R.mipmap.ic_stop_black_24dp);
-            drawable = DrawableCompat.wrap(drawable);
-            DrawableCompat.setTint(drawable, context.getResources().getColor(R.color.light_gray));
-            holder.iv_stop.setImageDrawable(drawable);
-        }
-        else if (user_pos.getIs_stop().contains("1")){
+        if (user_pos.getIs_stop().contains("1")){
             holder.iv_stop.setEnabled(false);
             Resources res = context.getResources();
             Drawable drawable = res.getDrawable(R.mipmap.ic_stop_black_24dp);
@@ -269,6 +222,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
 
+                holder1=(Holder)v.getTag();
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setMessage("Are you sure to stop?")
                         .setCancelable(false)
@@ -296,15 +250,13 @@ public class SubscriptionListingAdapter extends BaseAdapter {
 
         }else {
 
-            showSnackbar("No Internet");
-            //Toast.makeText(this, "You are in Offline Mode", Toast.LENGTH_LONG).show();
+        //    showSnackbar("No Internet");
+            Toast.makeText(context, "You are in Offline Mode", Toast.LENGTH_LONG).show();
         }
     }
 
     private void showSnackbar(String s) {
-        Snackbar snackbar = Snackbar
-                .make(activity_my_subscription, s, Snackbar.LENGTH_LONG);
-        snackbar.show();
+        Toast.makeText(context,s,Toast.LENGTH_SHORT).show();
     }
 
     private class getstopsubscribe extends AsyncTask<String, Void, Void> {
@@ -401,6 +353,7 @@ public class SubscriptionListingAdapter extends BaseAdapter {
         protected void onPostExecute(Void user) {
             super.onPostExecute(user);
             if(server_status==1){
+                holder1.iv_stop.setVisibility(View.INVISIBLE);
                 showSnackbar(server_message);
             }
             else{

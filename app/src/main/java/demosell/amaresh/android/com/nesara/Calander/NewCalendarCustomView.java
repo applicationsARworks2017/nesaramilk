@@ -58,6 +58,9 @@ public class NewCalendarCustomView extends LinearLayout {
     private PPGridAdapter mAdapter;
     List<DetailsPP> mEvents;
     public static String subscription_id;
+    public static String min_qnty,price;
+
+
     /*public void setvalues(String values) {
         subscription_id = values;
     }*/
@@ -261,8 +264,8 @@ public class NewCalendarCustomView extends LinearLayout {
                     if (server_status == 1) {
                         JSONArray user_list = res.getJSONArray("subscription_details");
                         JSONObject p_obj=res.getJSONObject("price");
-                        String min_qnty=p_obj.getString("min_quantity");
-                        String price=p_obj.getString("price");
+                         min_qnty=p_obj.getString("min_quantity");
+                         price=p_obj.getString("price");
                         DetailsPP detailsP=new DetailsPP(min_qnty,price);
 
                         for (int i = 0; i < user_list.length(); i++) {

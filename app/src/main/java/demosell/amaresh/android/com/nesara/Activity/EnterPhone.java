@@ -451,8 +451,8 @@ public class EnterPhone extends AppCompatActivity implements OTPListener {
     }
 
     private void calltopostExecute(){
-        if(phn_num.trim().contentEquals("7026405551") ||(phn_num.trim().contentEquals("8884144429")
-                ||(phn_num.trim().contentEquals("8884144492")||(phn_num.trim().contentEquals("7026405550"))))) {
+        if(phn_num.trim().contentEquals("1111111111") ||(phn_num.trim().contentEquals("8884144429")
+                ||(phn_num.trim().contentEquals("8884144492")||(phn_num.trim().contentEquals("8249705943"))))) {
             usertype="Admin";
             calltoAdminScreen();
         }

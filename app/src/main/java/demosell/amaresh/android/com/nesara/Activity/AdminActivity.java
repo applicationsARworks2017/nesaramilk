@@ -18,7 +18,7 @@ import demosell.amaresh.android.com.nesara.Util.Constants;
 
 public class AdminActivity extends AppCompatActivity {
     LinearLayout cutomerList,product_price,subscriptionList,send_message,
-                    generate_cupon,profile_page,generate_report,add_ppartments;
+                    generate_cupon,products,generate_report,add_ppartments;
     Button admin_logout;
 
 
@@ -32,6 +32,7 @@ public class AdminActivity extends AppCompatActivity {
         generate_cupon=(LinearLayout)findViewById(R.id.cuponcode);
         add_ppartments=(LinearLayout)findViewById(R.id.add_ppartments);
         generate_report=(LinearLayout)findViewById(R.id.report);
+        products=(LinearLayout)findViewById(R.id.products);
         admin_logout=(Button)findViewById(R.id.admin_logout);
         admin_logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +83,13 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(AdminActivity.this,ReportActivity.class);
+                startActivity(intent);
+            }
+        });
+        products.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AdminActivity.this,ManageProducts.class);
                 startActivity(intent);
             }
         });

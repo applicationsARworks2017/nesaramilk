@@ -35,4 +35,8 @@
     <color name="purple">#B121AC</color>
     <color name="light_purple">#EAC8E9</color>
     <color name="lightyellow">#F9FD7F</color>
+    <color name="apartmentcol">#E64A19</color>
+    <color name="flatcol">#039BE5</color>
+    <color name="productcol">#4CAF50</color>
+    <color name="qntycol">#673AB7</color>
 </resources>

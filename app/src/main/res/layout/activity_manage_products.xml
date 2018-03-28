@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demosell.amaresh.android.com.nesara.Activity.ManageProducts">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe_products"
+        android:layout_height="match_parent">
+        <GridView
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/product_grid">
+        </GridView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

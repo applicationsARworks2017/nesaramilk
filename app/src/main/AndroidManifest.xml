@@ -166,8 +166,12 @@
             android:name="demosell.amaresh.android.com.nesara.Activity.DateSubcribe"
             android:label="Datewise Subscribe"
             android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.NewSubscription" />
-        <activity android:name="demosell.amaresh.android.com.nesara.Activity.PausePlayActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="demosell.amaresh.android.com.nesara.Activity.PausePlayActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="demosell.amaresh.android.com.nesara.Activity.ManageProducts"
+            android:parentActivityName="demosell.amaresh.android.com.nesara.Activity.AdminActivity"
+            android:label="Manage Products"></activity>
     </application>
 
 </manifest>

@@ -217,7 +217,7 @@ public class ReportActivity extends AppCompatActivity {
                             String flat_no = o_list_obj.getString("flat_no");
                             String address = o_list_obj.getString("address");
                             String block_name = o_list_obj.getString("block_name");
-                            String appartment_name = o_list_obj.getString("appartment_name");
+                            String appartment_name = o_list_obj.getString("apartment_name");
                             String product_name = o_list_obj.getString("product_name");
                             String s_quantity = o_list_obj.getString("quentity");
                             String s_liter = o_list_obj.getString("weight_type");

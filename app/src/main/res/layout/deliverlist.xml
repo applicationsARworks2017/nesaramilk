@@ -15,6 +15,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:id="@+id/apartmentname"
+            android:textColor="@color/apartmentcol"
             android:maxLength="20"
             android:layout_marginBottom="5dp" />
         <LinearLayout
@@ -30,6 +31,7 @@
             android:text="E20122"
             android:maxLength="15"
             android:id="@+id/flatname"
+            android:textColor="@color/flatcol"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
@@ -46,6 +48,7 @@
             android:layout_height="wrap_content"
             android:text="Desi Milk"
             android:maxLength="20"
+            android:textColor="@color/productcol"
             android:id="@+id/productname"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
@@ -63,6 +66,7 @@
             android:text="0.5L"
             android:maxLength="15"
             android:id="@+id/quanity"
+            android:textColor="@color/qntycol"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"/>

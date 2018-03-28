@@ -32,6 +32,7 @@ public class Constants {
     public static final String SEND_MESSAGE= "setnotification.php";
     public static final String GET_MESSAGE= "getnotification.php";
     public static final String GET_PRODUCTS= "getprice.php";
+    public static final String GET_PRODUCT_LIST= "getproduct.php";
     public static final String STOP_SUBSCRIBE= "stopsubscribe.php";
 
 
